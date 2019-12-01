@@ -1,0 +1,17 @@
+@mixin container-mobile {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@mixin container-tablet {
+  width: 668px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+@mixin container-desktop {
+  width: 1050px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
