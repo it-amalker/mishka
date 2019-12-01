@@ -71,7 +71,7 @@ gulp.task('js-libs', function () {
 });
 
 gulp.task('img', function () {
-  return gulp.src('src/img/*.*')
+  return gulp.src('src/img/**/*.*')
     .pipe(browserSync.reload({ stream: true }))
 });
 
@@ -86,7 +86,7 @@ gulp.task('browser-sync', function () {
 // SVG sprite
 
 gulp.task('svgSpriteBuild', function () {
-  return gulp.src('src/img/*.svg')
+  return gulp.src('src/img/icons/*.svg')
     .pipe(svgmin({
       js2svg: {
         pretty: true
@@ -112,7 +112,7 @@ gulp.task('svgSpriteBuild', function () {
       }
     }))
 
-    .pipe(gulp.dest('src/img/sprites/'))
+    .pipe(gulp.dest('src/img/icons/sprite/'))
     .pipe(browserSync.reload({ stream: true }))
 })
 
@@ -135,7 +135,7 @@ gulp.task('pack', async function () {
   let moveFonts = gulp.src('src/fonts/*.*')
     .pipe(gulp.dest('build/fonts'));
 
-  let moveImg = gulp.src(['src/img/*.webp', 'src/img/*.jpg', 'src/img/*.png', 'src/img/sprites/*.svg'], { base: './src/img' })
+  let moveImg = gulp.src(['src/img/**/*.*', '!src/img/icons/*.svg'], { base: './src/img' })
     .pipe(gulp.dest('build/img'));
 });
 
