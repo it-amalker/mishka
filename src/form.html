@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Форма заказа</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="main-logo">
+        <picture>
+          <source srcset="img/main-logo-desktop.svg" media="(min-width: 1150px)">
+          <source srcset="img/main-logo-tablet.svg" media="(min-width: 768px)">
+          <img class="main-logo__icon" src="img/main-logo-mobile.svg" alt="Главный логотип сайта">
+        </picture>
+      </div>
+      <nav class="main-nav">
+        <button class="nav-toggle nav-toggle--off" type="button"><span class="visually-hidden">Переключатель
+            меню</span></button>
+        <ul class="main-menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="user-menu">
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link">Поиск по сайту</a>
+          </li>
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-submenu">
+          <li class="main-submenu__item">
+            <a href="#" class="main-submenu__link">Новые поступления</a>
+          </li>
+          <li class="main-submenu__item">
+            <a href="#" class="main-submenu__link">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="page-main__title-wrap">
+      <h1 class="page-main__title">Вязание на заказ</h1>
+    </div>
+    <section class="form">
+      <p class="form__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся
+        с вами, чтобы уточнить детали.</p>
+      <fieldset class="form__order-type order-type">
+        <div class="order-type__wrapper">
+          <legend class="form__title">Тип</legend>
+          <ul class="order-type__list">
+            <li class="order-type__item">
+              <input class="order-type__input" type="radio" name="order-type" id="interior" checked>
+              <label class="order-type__label" for="interior">Аксессуар для интерьера</label>
+            </li>
+            <li class="order-type__item">
+              <input class="order-type__input" type="radio" name="order-type" id="toy">
+              <label class="order-type__label" for="toy">Детская игрушка</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-logo">
+      <a href="#">
+        <svg class="footer-logo__icon">
+          <use xlink:href="img/icons/sprite/sprite.svg#footer-logo"></use>
+        </svg>
+      </a>
+    </div>
+    <ul class="socials">
+      <li class="socials__items">
+        <a href="#" class="socials__link" aria-label="Instagram">
+          <svg class="footer-logo__icon">
+            <use xlink:href="img/icons/sprite/sprite.svg#social-insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__items">
+        <a href="#" class="socials__link" aria-label="Facebook">
+          <svg class="footer-logo__icon">
+            <use xlink:href="img/icons/sprite/sprite.svg#social-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__items">
+        <a href="#" class="socials__link" aria-label="Twitter">
+          <svg class="footer-logo__icon">
+            <use xlink:href="img/icons/sprite/sprite.svg#social-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      <p class="copyright__text">Разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__developer"
+        aria-label="Логотип HTML Academy">
+        <svg class="copyright__developer-icon">
+          <use xlink:href="img/icons/sprite/sprite.svg#html-academy-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
