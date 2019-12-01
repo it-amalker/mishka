@@ -14,11 +14,59 @@
 
 <body>
   <header class="page-header">
-
-
+    <div class="page-header__wrapper">
+      <div class="main-logo">
+        <picture>
+          <source srcset="img/main-logo-desktop.svg" media="(min-width: 1150px)">
+          <source srcset="img/main-logo-tablet.svg" media="(min-width: 768px)">
+          <img class="main-logo__icon" src="img/main-logo-mobile.svg" alt="Главный логотип сайта">
+        </picture>
+        <img src="" alt="" srcset="">
+        <a href="#">
+          <svg class="logo__icon-mobile">
+            <use xlink:href="img/sprites/sprite.svg#main-logo-mobile"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="logo__icon-tablet">
+            <use xlink:href="img/sprites/sprite.svg#main-logo-tablet"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="nav-toggle nav-toggle--off" type="button"><span class="visually-hidden">Переключатель
+            меню</span></button>
+        <ul class="main-menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="user-menu">
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link">Поиск по сайту</a>
+          </li>
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-submenu">
+          <li class="main-submenu__item">
+            <a href="#" class="main-submenu__link">Новые поступления</a>
+          </li>
+          <li class="main-submenu__item">
+            <a href="#" class="main-submenu__link">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
+    <div class="header-content">
 
+    </div>
   </main>
   <footer class="page-footer">
 
