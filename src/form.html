@@ -60,19 +60,17 @@
       <p class="form__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся
         с вами, чтобы уточнить детали.</p>
       <fieldset class="form__order-type order-type">
-        <div class="order-type__wrapper">
-          <legend class="form__title">Тип</legend>
-          <ul class="order-type__list">
-            <li class="order-type__item">
-              <input class="order-type__input" type="radio" name="order-type" id="interior" checked>
-              <label class="order-type__label" for="interior">Аксессуар для интерьера</label>
-            </li>
-            <li class="order-type__item">
-              <input class="order-type__input" type="radio" name="order-type" id="toy">
-              <label class="order-type__label" for="toy">Детская игрушка</label>
-            </li>
-          </ul>
-        </div>
+        <legend class="form__title">Тип</legend>
+        <ul class="order-type__list">
+          <li class="order-type__item">
+            <input class="order-type__input" type="radio" name="order-type" id="interior" checked>
+            <label class="order-type__label" for="interior">Аксессуар для интерьера</label>
+          </li>
+          <li class="order-type__item">
+            <input class="order-type__input" type="radio" name="order-type" id="toy">
+            <label class="order-type__label" for="toy">Детская игрушка</label>
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="form__color-type color-type">
         <div class="color-type__wrapper">
@@ -104,6 +102,15 @@
             </li>
           </ul>
         </div>
+      </fieldset>
+      <fieldset class="form__color-type full-name">
+        <legend class="form__title">ФИО</legend>
+        <label for="name">Имя:</label>
+        <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+        <label for="surname">Фамилия:</label>
+        <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+        <label for="patronymic">Отчество:</label>
+        <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
       </fieldset>
     </section>
   </main>
