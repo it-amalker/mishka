@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Каталог товаров</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="main-logo">
+        <a href="index.html" class="main-logo__icon-link">
+          <picture>
+            <source srcset="img/main-logo-desktop.svg" media="(min-width: 1150px)">
+            <source srcset="img/main-logo-tablet.svg" media="(min-width: 768px)">
+            <img class="main-logo__icon" src="img/main-logo-mobile.svg" alt="Главный логотип сайта">
+          </picture>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="nav-toggle nav-toggle--off" type="button" aria-label="Переключатель
+            меню"></button>
+        <ul class="main-menu">
+          <li class="menu__item">
+            <a class="menu__link">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="user-menu">
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link">Поиск по сайту</a>
+            <a href="#" class="user-menu__icon-link">
+              <svg class="user-menu__icon">
+                <use xlink:href="img/icons/sprite/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-menu__item">
+            <a href="#" class="user-menu__link">Корзина: пока пуста</a>
+            <a href="#" class="user-menu__icon-link">
+              <svg class="user-menu__icon">
+                <use xlink:href="img/icons/sprite/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="page-main__title-wrap">
+      <h1 class="page-main__title">Каталог товаров</h1>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-logo">
+      <a href="#">
+        <svg class="footer-logo__icon">
+          <use xlink:href="img/icons/sprite/sprite.svg#footer-logo"></use>
+        </svg>
+      </a>
+    </div>
+    <ul class="socials">
+      <li class="socials__items">
+        <a href="#" class="socials__link" aria-label="Instagram">
+          <svg class="footer-logo__icon">
+            <use xlink:href="img/icons/sprite/sprite.svg#social-insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__items">
+        <a href="#" class="socials__link" aria-label="Facebook">
+          <svg class="footer-logo__icon">
+            <use xlink:href="img/icons/sprite/sprite.svg#social-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__items">
+        <a href="#" class="socials__link" aria-label="Twitter">
+          <svg class="footer-logo__icon">
+            <use xlink:href="img/icons/sprite/sprite.svg#social-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      <p class="copyright__text">Разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__developer"
+        aria-label="Логотип HTML Academy">
+        <svg class="copyright__developer-icon">
+          <use xlink:href="img/icons/sprite/sprite.svg#html-academy-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <div class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__description">Выберите размер:</p>
+    <ul class="size-select">
+      <li class="size__item">
+        <a href="#" class="size__link" aria-label="Размер S">S</a>
+      </li>
+      <li class="size__item">
+        <a href="#" class="size__link" aria-label="Размер M">M</a>
+      </li>
+      <li class="size__item">
+        <a href="#" class="size__link" aria-label="Размер L">L</a>
+      </li>
+    </ul>
+    <button class="modal__add-button" type="button">Добавить</button>
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

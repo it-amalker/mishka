@@ -23,22 +23,32 @@
         </picture>
       </div>
       <nav class="main-nav">
-        <button class="nav-toggle nav-toggle--off" type="button"><span class="visually-hidden">Переключатель
-            меню</span></button>
+        <button class="nav-toggle nav-toggle--off" type="button" aria-label="Переключатель
+          меню"></button>
         <ul class="main-menu">
           <li class="menu__item">
-            <a href="#" class="menu__link">Каталог товаров</a>
+            <a href="catalog.html" class="menu__link">Каталог товаров</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Вязание на заказ</a>
+            <a href="form.html" class="menu__link">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="user-menu">
           <li class="user-menu__item">
             <a href="#" class="user-menu__link">Поиск по сайту</a>
+            <a href="#" class="user-menu__icon-link">
+              <svg class="user-menu__icon">
+                <use xlink:href="img/icons/sprite/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
           </li>
           <li class="user-menu__item">
             <a href="#" class="user-menu__link">Корзина: пока пуста</a>
+            <a href="#" class="user-menu__icon-link">
+              <svg class="user-menu__icon">
+                <use xlink:href="img/icons/sprite/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <ul class="main-submenu">
