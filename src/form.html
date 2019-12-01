@@ -74,7 +74,7 @@
       </fieldset>
       <fieldset class="form__color-type color-type">
         <div class="color-type__wrapper">
-          <legend class="form__title">Тип</legend>
+          <legend class="form__title">Цвет</legend>
           <ul class="color-type__list">
             <li class="color-type__item">
               <input class="color-type__input" type="checkbox" name="white" id="white" checked>
@@ -103,7 +103,7 @@
           </ul>
         </div>
       </fieldset>
-      <fieldset class="form__color-type full-name">
+      <fieldset class="form__full-name full-name">
         <legend class="form__title">ФИО</legend>
         <label for="name">Имя:</label>
         <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
@@ -112,6 +112,17 @@
         <label for="patronymic">Отчество:</label>
         <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
       </fieldset>
+      <div class="form-contacts__wrapper">
+        <fieldset class="form__contact-tel contact-tel">
+          <legend class="form__title">Тел</legend>
+          <input type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+        </fieldset>
+        <fieldset class="form__contact-email contact-email">
+          <legend class="form__title">E-mail</legend>
+          <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
+        </fieldset>
+      </div>
+
     </section>
   </main>
   <footer class="page-footer">
