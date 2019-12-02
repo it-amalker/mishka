@@ -1,0 +1,67 @@
+.main-nav {
+  position: relative;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 28px;
+  right: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &--off {
+    background-image: $burger-menu;
+
+    width: 20px;
+    height: 14px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--on {
+    width: 21px;
+    height: 20px;
+
+    background-image: url('../../img/icons/sprite/sprite.svg#icon-cross');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-screen) {
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+
+  .main-nav {
+    align-items: center;
+  }
+}

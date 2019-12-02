@@ -1,0 +1,40 @@
+.main-submenu {
+  display: none;
+}
+
+@media (min-width: $desktop-screen) {
+  .main-submenu {
+    position: absolute;
+    bottom: -59px;
+    left: 0;
+
+    order: 4;
+    display: flex;
+    width: 350px;
+  }
+
+  .main-submenu__item {
+
+    &:first-child {
+      padding-right: 60px;
+    }
+  }
+
+  .main-submenu__link {
+    display: block;
+    padding: 18px 0;
+
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: rgba(#000000, 0.6);
+    }
+
+    &:active {
+      color: rgba(#000000, 0.3);
+    }
+  }
+}

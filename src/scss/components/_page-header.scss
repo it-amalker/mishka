@@ -1,0 +1,15 @@
+.page-header__wrapper {
+  @include container-mobile;
+}
+
+@media (min-width: $tablet-screen) {
+  .page-header__wrapper {
+    @include container-tablet;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .page-header__wrapper {
+    @include container-desktop;
+  }
+}

@@ -1,0 +1,51 @@
+.main-logo {
+  padding: 21px 0 22px 0;
+  text-align: center;
+
+  border-top: 1px solid #ececec;
+}
+
+.main-logo__icon {
+  width: 86px;
+  height: 35px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-screen) {
+  .main-logo {
+    width: 113px;
+    padding: 22px 0 20px 0;
+
+    text-align: left;
+
+    border-top: none;
+    }
+
+  .main-logo__icon {
+    width: 113px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .main-logo {
+    order: 2;
+    width: 149px;
+    padding: 9px 0 7px 0;
+
+    text-align: center;
+    }
+
+  .main-logo__icon {
+    width: 149px;
+    height: 72px;
+  }
+}
+
