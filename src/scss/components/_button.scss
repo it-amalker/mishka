@@ -9,4 +9,15 @@
   text-align: center;
 
   border: 2px solid #444444;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3)
+
+  }
 }
+
