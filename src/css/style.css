@@ -660,7 +660,7 @@ img {
 }
 
 .user-menu__icon:hover {
-  fill: #46c1ae;
+  fill: #63d1bb;
   opacity: 1;
 }
 
@@ -773,5 +773,84 @@ img {
 }
 
 .page-main {
-  padding-top: 50px;
+  border-left: 1px solid #ececec;
+}
+
+.promo {
+  width: 100%;
+  height: 488px;
+  padding-top: 70px;
+  background-color: #f9f9f9;
+  background-image: url("../../img/content/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.promo__delivery {
+  display: none;
+}
+
+.page-title {
+  max-width: 260px;
+  margin: 0 auto;
+  margin-bottom: 121px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.promo-buttons__link {
+  position: relative;
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 30px 30px 30px;
+  font-size: 19px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.promo-buttons__link::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 36px;
+}
+
+.promo-buttons__link--interior {
+  background-color: #63d1bb;
+}
+
+.promo-buttons__link--interior::after {
+  top: 23px;
+  right: 36px;
+  width: 40px;
+  height: 62px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-lamp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo-buttons__link--toys {
+  background-color: #56c3b2;
+}
+
+.promo-buttons__link--toys::after {
+  top: 27px;
+  right: 21px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-toy-block");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .promo__br {
+    display: none;
+  }
 }
