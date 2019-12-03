@@ -26,11 +26,9 @@
   @include container-mobile;
 
   position: relative;
-}
 
-.bestseller__content-wrap {
-  display: block;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .bestseller__title {
@@ -52,6 +50,10 @@
   text-align: left;
 }
 
+.bestseller__content-wrap {
+  display: block;
+}
+
 .bestseller__description {
   margin-bottom: 17px;
 
@@ -60,7 +62,11 @@
 }
 
 .bestseller__table {
-  margin-bottom: 367px;
+  margin-bottom: 28px;
+}
+
+.bestseller__price-wrap {
+  order: 4;
 }
 
 .bestseller__price {
@@ -71,15 +77,96 @@
   text-align: center;
 }
 
-.bestseller__order-button {
-  margin-bottom: 36px;
+.bestseller__img-wrap {
+  order: 3;
 }
 
 .bestseller__img {
-  position: absolute;
-  bottom: 126px;
-  left: 0;
+  display: block;
+  margin-bottom: 24px;
 
   width: 260px;
   height: 315px;
+}
+
+@media (min-width: $tablet-screen) {
+  .bestseller {
+    min-height: 613px;
+    padding-top: 34px;
+
+    &::after {
+      height: 17px;
+    }
+  }
+
+  .bestseller__wrapper {
+    @include container-tablet;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .bestseller__title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .bestseller__title {
+    width: 500px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .bestseller__info-plate {
+    width: 126px;
+    margin-bottom: 0;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .bestseller__content-wrap {
+    width: 290px;
+  }
+
+  .bestseller__description {
+    margin-bottom: 36px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .bestseller__table {
+    margin-bottom: 56px;
+  }
+
+  .bestseller__price-wrap {
+    width: 290px;
+    margin-top: -110px;
+  }
+
+  .bestseller__price {
+    display: block;
+    margin-bottom: 34px;
+
+    font-size: 20px;
+  }
+
+  .bestseller__img-wrap {
+    width: 334px;
+    padding-top: 8px;
+  }
+
+  .bestseller__img {
+    margin-bottom: 0;
+
+    width: 333px;
+    height: 404px;
+  }
 }
