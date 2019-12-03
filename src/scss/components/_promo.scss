@@ -1,6 +1,6 @@
 .promo {
   width: 100%;
-  height: 488px;
+  min-height: 488px;
   padding-top: 70px;
 
   background-color: #f9f9f9;
@@ -42,8 +42,6 @@
     content: '';
 
     position: absolute;
-    top: 30px;
-    right: 36px;
   }
 
   &--interior {
@@ -61,6 +59,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    opacity: 0.5;
   }
 
   &--toys {
@@ -78,18 +78,148 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    opacity: 0.5;
   }
 }
 
-
-
-
-
-
-
-
 @media (min-width: $tablet-screen) {
+  .promo {
+    position: relative;
+
+    min-height: 757px;
+    padding-top: 0;
+
+    background-image: url('../../img/content/hero-tablet@1x.jpg');
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url('../../img/zig-zag.svg');
+      background-repeat: repeat-x;
+      background-position: 0 bottom;
+      background-size: contain;
+    }
+  }
+
+  .promo__wrapper {
+    @include container-tablet;
+
+    position: relative;
+
+    padding-top: 154px;
+  }
+
+  .promo__delivery {
+    position: absolute;
+    top: 18px;
+    right: 0;
+
+    display: block;
+
+    font-size: 15px;
+    color: #444444;
+  }
+
+  .page-title {
+    max-width: 500px;
+    margin-bottom: 372px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .promo__br {
     display: none;
+  }
+
+  .promo-buttons__list {
+    display: flex;
+  }
+
+  .promo-buttons__link {
+    width: 334px;
+    padding: 28px 10px 32px 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    transition: margin 0.3s;
+
+    &--interior::after {
+      top: 30px;
+    }
+
+    &--toys::after {
+      top: 31px;
+      right: 33px;
+    }
+
+    &:hover {
+      margin-top: -5px;
+      padding-bottom: 37px;
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+    }
+
+    &:hover::after {
+      opacity: 0.7;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .promo {
+    position: relative;
+
+    min-height: 762px;
+
+    background-image: url('../../img/content/hero-desktop@1x.jpg');
+
+    &::after {
+      height: 34px;
+    }
+  }
+
+  .promo__wrapper {
+    @include container-desktop;
+
+    padding-top: 155px;
+  }
+
+  .promo__delivery {
+    top: 19px;
+  }
+
+  .page-title {
+    max-width: 615px;
+    margin-bottom: 357px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo-buttons__link {
+    width: 525px;
+    padding: 28px 10px 31px 37px;
+
+    &--toys::after {
+      top: 32px;
+      right: 35px;
+    }
   }
 }

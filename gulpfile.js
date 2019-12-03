@@ -96,8 +96,8 @@ gulp.task('svgSpriteBuild', function () {
     .pipe(cheerio({
       run: function ($) {
         // $('[fill]').removeAttr('fill');
-        $('[stroke]').removeAttr('stroke');
-        $('[style]').removeAttr('style');
+        // $('[stroke]').removeAttr('stroke');
+        // $('[style]').removeAttr('style');
       },
       parserOptions: { xmlMode: true }
     }))

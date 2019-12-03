@@ -424,7 +424,7 @@ img {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1150px) {
   .page-header__wrapper {
     width: 1150px;
     margin: 0 auto;
@@ -464,7 +464,7 @@ img {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1150px) {
   .main-logo {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -544,7 +544,7 @@ img {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1150px) {
   .main-nav {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -579,6 +579,7 @@ img {
     position: absolute;
     bottom: -59px;
     left: 0;
+    z-index: 5;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -602,7 +603,7 @@ img {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1150px) {
   .main-menu {
     position: relative;
     bottom: 0;
@@ -719,7 +720,7 @@ img {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1150px) {
   .user-menu {
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
@@ -738,7 +739,7 @@ img {
   display: none;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1150px) {
   .main-submenu {
     position: absolute;
     bottom: -59px;
@@ -778,7 +779,7 @@ img {
 
 .promo {
   width: 100%;
-  height: 488px;
+  min-height: 488px;
   padding-top: 70px;
   background-color: #f9f9f9;
   background-image: url("../../img/content/hero-mobile@1x.jpg");
@@ -815,8 +816,6 @@ img {
 .promo-buttons__link::after {
   content: '';
   position: absolute;
-  top: 30px;
-  right: 36px;
 }
 
 .promo-buttons__link--interior {
@@ -832,6 +831,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0.5;
 }
 
 .promo-buttons__link--toys {
@@ -847,10 +847,119 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
+  .promo {
+    position: relative;
+    min-height: 757px;
+    padding-top: 0;
+    background-image: url("../../img/content/hero-tablet@1x.jpg");
+  }
+  .promo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 24px;
+    background-image: url("../../img/zig-zag.svg");
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: contain;
+  }
+  .promo__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 154px;
+  }
+  .promo__delivery {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    display: block;
+    font-size: 15px;
+    color: #444444;
+  }
+  .page-title {
+    max-width: 500px;
+    margin-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
   .promo__br {
     display: none;
+  }
+  .promo-buttons__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .promo-buttons__link {
+    width: 334px;
+    padding: 28px 10px 32px 36px;
+    font-size: 20px;
+    line-height: 30px;
+    -webkit-transition: margin 0.3s;
+    -o-transition: margin 0.3s;
+    transition: margin 0.3s;
+  }
+  .promo-buttons__link--interior::after {
+    top: 30px;
+  }
+  .promo-buttons__link--toys::after {
+    top: 31px;
+    right: 33px;
+  }
+  .promo-buttons__link:hover {
+    margin-top: -5px;
+    padding-bottom: 37px;
+  }
+  .promo-buttons__link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .promo-buttons__link:hover::after {
+    opacity: 0.7;
+  }
+  .promo-buttons__link:active::after {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 1150px) {
+  .promo {
+    position: relative;
+    min-height: 762px;
+    background-image: url("../../img/content/hero-desktop@1x.jpg");
+  }
+  .promo::after {
+    height: 34px;
+  }
+  .promo__wrapper {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+    padding-top: 155px;
+  }
+  .promo__delivery {
+    top: 19px;
+  }
+  .page-title {
+    max-width: 615px;
+    margin-bottom: 357px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .promo-buttons__link {
+    width: 525px;
+    padding: 28px 10px 31px 37px;
+  }
+  .promo-buttons__link--toys::after {
+    top: 32px;
+    right: 35px;
   }
 }
