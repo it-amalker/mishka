@@ -1,0 +1,18 @@
+.table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.table__cell {
+  padding: 10px 0;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+
+  border-bottom: 1px solid #ececec;
+
+  &:first-child {
+    width: 98px;
+  }
+}
