@@ -105,8 +105,6 @@
   }
 
   .features__item {
-    position: relative;
-
     width: 50%;
     padding-top: 111px;
 
@@ -167,6 +165,41 @@
 
     &--gift::before {
       top: 59px;
+    }
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .features {
+    @include container-desktop;
+
+    padding: 61px 0 91px 0;
+  }
+
+  .features__title {
+    width: 700px;
+    margin: 0 auto;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__list {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .features__item {
+    width: 350px;
+
+    &:nth-child(-n + 2) {
+      padding-top: 101px;
+    }
+
+    &::before {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
 }
