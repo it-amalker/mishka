@@ -1,0 +1,37 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 22px;
+  padding-bottom: 27px;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.socials__link {
+  display: block;
+  margin-right: 40px;
+
+  &--tw {
+    margin-right: 0;
+  }
+}
+
+.footer-logo__icon {
+
+  &--insta {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--tw {
+    width: 23px;
+    height: 20px;
+  }
+}
