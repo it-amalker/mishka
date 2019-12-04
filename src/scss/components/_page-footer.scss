@@ -5,5 +5,12 @@
 }
 
 @media (min-width: $tablet-screen) {
+  .page-footer {
+    @include container-tablet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    padding: 51px 0;
+  }
 }

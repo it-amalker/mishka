@@ -34,4 +34,22 @@
     width: 23px;
     height: 20px;
   }
+
+  &:hover {
+    fill: $color-downy;
+  }
+
+  &:active {
+    fill: rgba($color-downy, 0.3);
+  }
+}
+
+@media (min-width: $tablet-screen) {
+  .socials {
+    width: 145px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    border-bottom: none;
+  }
 }
