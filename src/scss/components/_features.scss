@@ -86,3 +86,87 @@
     background-image: url('../../img/icons/sprite/sprite.svg#icon-feature-gift');
   }
 }
+
+@media (min-width: $tablet-screen) {
+  .features {
+    @include container-tablet;
+
+    padding: 50px 0 83px 0;
+  }
+
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    position: relative;
+
+    width: 50%;
+    padding-top: 111px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-child(-n + 2) {
+      padding-top: 102px;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--skein{
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+
+    &::before {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &--flower::before {
+      top: 47px;
+    }
+
+    &--money::before {
+      top: 58px;
+      left: 1px;
+    }
+
+    &--heart::before {
+      top: 63px;
+      left: 8px;
+    }
+
+    &--skein::before {
+      top: 51px;
+    }
+
+    &--rocket::before {
+      top: 61px;
+    }
+
+    &--gift::before {
+      top: 59px;
+    }
+  }
+}
