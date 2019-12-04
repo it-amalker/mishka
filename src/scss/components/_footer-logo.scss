@@ -21,3 +21,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-screen) {
+  .footer-logo {
+    width: 350px;
+  }
+}

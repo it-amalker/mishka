@@ -1,16 +1,31 @@
 .page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
   @include container-mobile;
 
   padding: 25px 0 23px 0;
+
+  background-color: #f1f1f1;
 }
 
 @media (min-width: $tablet-screen) {
-  .page-footer {
+  .page-footer__wrapper {
     @include container-tablet;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     padding: 51px 0;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .page-footer__wrapper {
+    @include container-desktop;
+
+    padding-top: 51px;
+    padding-bottom: 51px;
   }
 }

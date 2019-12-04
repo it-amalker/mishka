@@ -53,3 +53,9 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-screen) {
+  .socials {
+    width: 350px;
+  }
+}

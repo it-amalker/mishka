@@ -32,3 +32,9 @@
     width: 190px;
   }
 }
+
+@media (min-width: $desktop-screen) {
+  .copyright {
+    width: 350px;
+  }
+}
