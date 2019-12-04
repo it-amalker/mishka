@@ -58,3 +58,9 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-screen) {
+  .arrows-wrap {
+    width: 175px;
+  }
+}
