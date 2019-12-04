@@ -2052,6 +2052,7 @@ img {
   z-index: 10;
   width: 320px;
   height: 337px;
+  display: none;
   margin-top: -168px;
   margin-left: -160px;
   padding: 30px 30px 46px 30px;
@@ -2125,6 +2126,7 @@ img {
   text-align: center;
   background-color: #63d1bb;
   border: none;
+  cursor: pointer;
 }
 
 .modal__add-button:hover {

@@ -6,6 +6,7 @@
 
   width: 320px;
   height: 337px;
+  display: none;
   margin-top: -168px;
   margin-left: -160px;
   padding: 30px 30px 46px 30px;
@@ -79,6 +80,8 @@
 
   background-color: $color-downy;
   border: none;
+
+  cursor: pointer;
 
   &:hover {
     background-color: #46c1ae;
