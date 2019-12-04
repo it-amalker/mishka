@@ -1,0 +1,60 @@
+.reviews {
+  position: relative;
+
+  min-height: 629px;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url('../../img/zig-zag-gray.svg');
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: contain;
+  }
+}
+
+.reviews__wrapper {
+  @include container-mobile;
+}
+
+.reviews__title {
+  margin-bottom: 24px;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.review__text {
+  margin-bottom: 24px;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.review__author {
+  display: block;
+  margin-bottom: 5px;
+
+  font-weight: bold;
+}
+
+.review__nickname {
+  display: block;
+  margin-bottom: 28px;
+
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__arrows-position {
+  margin-bottom: 38px;
+}
