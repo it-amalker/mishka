@@ -2056,7 +2056,7 @@ img {
   margin-left: -160px;
   padding: 30px 30px 46px 30px;
   background-color: #ffffff;
-  border-top: 1px solid #c6c6c6;
+  border: 1px solid #c6c6c6;
   -webkit-box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
@@ -2133,4 +2133,37 @@ img {
 
 .modal__add-button:active {
   background-color: rgba(70, 193, 174, 0.3);
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 568px;
+    margin-left: -284px;
+    padding: 33px 0 46px 0;
+  }
+  .modal__title {
+    max-width: 354px;
+    margin-bottom: 14px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+  .modal__description {
+    margin-bottom: 21px;
+    font-size: 17px;
+  }
+  .size-select {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 31px;
+  }
+  .size__item {
+    width: 112px;
+  }
+  .modal__add-button-wrap {
+    width: 100%;
+    text-align: center;
+  }
+  .modal__add-button {
+    width: 350px;
+  }
 }
