@@ -1239,3 +1239,76 @@ img {
 .button:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.features {
+  width: 260px;
+  margin: 0 auto;
+  padding: 28px 0 56px 0;
+}
+
+.features__title {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.features__item {
+  position: relative;
+  padding-top: 83px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.features__item::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.features__item--flower::before {
+  left: 8px;
+  width: 32px;
+  height: 37px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-flower");
+}
+
+.features__item--money::before {
+  left: 0;
+  width: 47px;
+  height: 27px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-money");
+}
+
+.features__item--heart::before {
+  top: 35px;
+  left: 7px;
+  width: 34px;
+  height: 27px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-heart");
+}
+
+.features__item--skein::before {
+  top: 32px;
+  left: 3px;
+  width: 35px;
+  height: 34px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-skein");
+}
+
+.features__item--rocket::before {
+  top: 33px;
+  left: -6px;
+  width: 55px;
+  height: 23px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-rocket");
+}
+
+.features__item--gift::before {
+  left: 3px;
+  width: 33px;
+  height: 32px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-gift");
+}
