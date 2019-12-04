@@ -1,6 +1,5 @@
 .arrows-wrap {
   display: flex;
-  align-items: center;
   width: 100%;
 }
 
@@ -13,6 +12,8 @@
 
   background-color: transparent;
   border: 1px solid #ececec;
+
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -45,5 +46,15 @@
 
   &:active::after {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-screen) {
+  .arrows-wrap {
+    width: 167px;
+  }
+
+  .arrow {
+    border: none;
   }
 }
