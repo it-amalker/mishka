@@ -2488,3 +2488,53 @@ img {
   padding: 16px 0;
   line-height: 16px;
 }
+
+@media (min-width: 768px) {
+  .video {
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 63px;
+  }
+  .video__wrapper {
+    padding: 0;
+    border: none;
+  }
+  .video__title {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    margin-bottom: 0;
+    padding-left: 106px;
+    padding-top: 38px;
+    font-size: 20px;
+    border: 1px solid #ececec;
+    border-bottom: none;
+  }
+  .video__title::before {
+    top: 38px;
+    left: 41px;
+  }
+  .video__img-link {
+    height: 455px;
+    margin-bottom: 0;
+  }
+  .video__img {
+    width: 668px;
+    height: 455px;
+  }
+  .video__content-wrap {
+    padding: 33px 40px 45px 40px;
+    border: 1px solid #ececec;
+    border-top: none;
+  }
+  .video__info {
+    max-width: 583px;
+    margin-bottom: 34px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .video__order-button {
+    width: 584px;
+  }
+}
