@@ -4,7 +4,7 @@
 }
 
 .catalog__cards-item {
-  padding-top: 30px;
+  margin-top: 30px;
 
   &:first-child {
     padding-top: 0;
@@ -94,7 +94,15 @@
 
   .catalog__cards-item {
     display: flex;
-    padding-top: 54px;
+    margin-top: 54px;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(#000000, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(#000000, 0.1);
+    }
   }
 
   .catalog__img-link {
@@ -144,7 +152,7 @@
     display: flex;
     flex-direction: column;
     width: 316px;
-    padding-top: 0;
+    margin-top: 0;
   }
 
   .catalog__img-link {

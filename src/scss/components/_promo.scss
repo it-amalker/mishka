@@ -235,6 +235,8 @@
     padding-top: 155px;
 
     &--inner-page {
+      @include container-desktop--inner-page;
+
       padding-top: 96px;
     }
   }
