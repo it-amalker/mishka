@@ -2244,12 +2244,10 @@ img {
 }
 
 .catalog__description {
-  margin-bottom: 22px;
-  padding-bottom: 18px;
+  margin-bottom: 18px;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
-  border-bottom: 1px solid #ececec;
 }
 
 .catalog__price-wrap {
@@ -2265,6 +2263,8 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 22px;
+  border-top: 1px solid #ececec;
 }
 
 .catalog__price {
@@ -2286,4 +2286,49 @@ img {
 
 .catalog__icon:active {
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    width: 668px;
+    margin: 0 auto;
+    padding: 67px 0 53px 0;
+  }
+  .catalog__cards-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 54px;
+  }
+  .catalog__img-link {
+    height: 334px;
+  }
+  .catalog__img {
+    width: 334px;
+    height: 334px;
+  }
+  .catalog__card-info-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 334px;
+    padding: 24px 32px 26px 28px;
+  }
+  .catalog__title-link {
+    font-size: 20px;
+  }
+  .catalog__description {
+    margin-bottom: auto;
+    font-size: 15px;
+  }
+  .catalog__price {
+    font-size: 17px;
+  }
 }
