@@ -119,3 +119,38 @@
     font-size: 17px;
   }
 }
+
+@media (min-width: $desktop-screen) {
+  .catalog {
+    @include container-desktop--inner-page;
+    padding: 112px 0 57px 0;
+  }
+
+  .catalog__cards {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .catalog__cards-item {
+    display: flex;
+    flex-direction: column;
+    width: 316px;
+    padding-top: 0;
+  }
+
+  .catalog__img-link {
+    height: 462px;
+  }
+
+  .catalog__img {
+    width: 316px;
+    height: 462px;
+  }
+
+  .catalog__card-info-wrap {
+    flex-grow: 1;
+    width: 316px;
+    padding: 21px 31px 27px 28px;
+  }
+}

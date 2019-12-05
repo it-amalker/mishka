@@ -2332,3 +2332,49 @@ img {
     font-size: 17px;
   }
 }
+
+@media (min-width: 1150px) {
+  .catalog {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 112px 0 57px 0;
+  }
+  .catalog__cards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .catalog__cards-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 316px;
+    padding-top: 0;
+  }
+  .catalog__img-link {
+    height: 462px;
+  }
+  .catalog__img {
+    width: 316px;
+    height: 462px;
+  }
+  .catalog__card-info-wrap {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 316px;
+    padding: 21px 31px 27px 28px;
+  }
+}
