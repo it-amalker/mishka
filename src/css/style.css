@@ -2243,6 +2243,14 @@ img {
   text-decoration: none;
 }
 
+.catalog__title-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog__title-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog__description {
   margin-bottom: 18px;
   font-size: 13px;
@@ -2377,4 +2385,106 @@ img {
     width: 316px;
     padding: 21px 31px 27px 28px;
   }
+}
+
+.video {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 58px;
+}
+
+.video__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 23px 0 32px 0;
+  border: 1px solid #ececec;
+}
+
+.video__title {
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  margin-bottom: 24px;
+  padding-left: 90px;
+  font-size: 17px;
+}
+
+.video__title::before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 7px;
+  width: 32px;
+  height: 23px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-video-camera");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.video__img-link {
+  position: relative;
+  display: block;
+  height: 150px;
+  margin-bottom: 27px;
+}
+
+.video__img-link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 101px;
+  height: 77px;
+  margin-top: -38px;
+  margin-left: -50px;
+  background-image: url("../../img/icons/sprite/sprite.svg#icon-play");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.video__img-link:hover::after {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.video__img-link:active::after {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.video__img {
+  width: 260px;
+  height: 150px;
+}
+
+.video__content-wrap {
+  padding: 0 27px;
+}
+
+.video__info {
+  max-width: 184px;
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: #444444;
+}
+
+.video__order-button {
+  width: 192px;
+  margin: 0 auto;
+  padding: 16px 0;
+  line-height: 16px;
 }

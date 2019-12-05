@@ -151,20 +151,28 @@
       </ul>
     </section>
     <section class="video">
-      <h2 class="visually-hidden">Видеоролик об изготовлении товаров</h2>
-      <h3 class="video__title">Процесс производства</h3>
-      <!-- <video width="682" height="455" poster="img/content/video-desktop@1x.jpg"></video> -->
-      <picture>
-        <source srcset="img/content/video-desktop@1x.jpg 1x, img/content/video-desktop@2x.jpg 2x"
-          media="(min-width: 1150px)">
-        <source srcset="img/content/video-tablet@1x.jpg 1x, img/content/video-tablet@2x.jpg 2x"
-          media="(min-width: 768px)">
-        <img class="catalog__img" src="img/content/video-mobile@1x.jpg" srcset="img/content/video-mobile@2x.jpg 2x"
-          alt="Вязанная корзинка">
-      </picture>
-      <p class="video__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются
-        наши товары.</p>
-      <a href="#" class="video__order-button">Сделать заказ</a>
+      <div class="video__wrapper">
+        <h2 class="visually-hidden">Видео про изготовление изделий</h2>
+        <a class="video__img-link" href="#">
+          <picture>
+            <source srcset="img/content/video-desktop@1x.jpg 1x, img/content/video-desktop@2x.jpg 2x"
+              media="(min-width: 1150px)">
+            <source srcset="img/content/video-tablet@1x.jpg 1x, img/content/video-tablet@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <img class="video__img" src="img/content/video-mobile@1x.jpg" srcset="img/content/video-mobile@2x.jpg 2x"
+              alt="Вязанная корзинка">
+          </picture>
+        </a>
+        <h3 class="video__title">Процесс производства</h3>
+        <!-- <video width="682" height="455" poster="img/content/video-desktop@1x.jpg"></video> -->
+
+        <div class="video__content-wrap">
+          <p class="video__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+            появляются
+            наши товары.</p>
+          <a href="#" class="video__order-button button">Сделать заказ</a>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">

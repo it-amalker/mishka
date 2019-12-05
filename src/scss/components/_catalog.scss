@@ -36,6 +36,14 @@
   font-weight: bold;
   color: #000000;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(#000000, 0.6)
+  }
+
+  &:active {
+    color: rgba(#000000, 0.3)
+  }
 }
 
 .catalog__description {
