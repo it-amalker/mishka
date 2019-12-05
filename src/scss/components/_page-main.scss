@@ -1,3 +1,19 @@
 .page-main {
-  border-left: 1px solid #ececec;
+  border-top: 1px solid #ececec;
+}
+
+@media (min-width: $desktop-screen) {
+  .page-main__title-wrap {
+    min-height: 272px;
+    padding-top: 96px;
+
+    &::after {
+      height: 34px;
+    }
+  }
+
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

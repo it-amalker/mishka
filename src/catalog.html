@@ -15,21 +15,22 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="main-logo">
-        <a href="index.html" class="main-logo__icon-link">
-          <picture>
-            <source srcset="img/main-logo-desktop.svg" media="(min-width: 1150px)">
-            <source srcset="img/main-logo-tablet.svg" media="(min-width: 768px)">
-            <img class="main-logo__icon" src="img/main-logo-mobile.svg" alt="Главный логотип сайта">
-          </picture>
-        </a>
-      </div>
       <nav class="main-nav">
+        <div class="main-logo">
+          <a href="index.html">
+            <picture>
+              <source srcset="img/main-logo-desktop.svg" media="(min-width: 1150px)">
+              <source srcset="img/main-logo-tablet.svg" media="(min-width: 768px)">
+              <img class="main-logo__icon" src="img/main-logo-mobile.svg" width="86" height="35"
+                alt="Главный логотип сайта">
+            </picture>
+          </a>
+        </div>
         <button class="nav-toggle nav-toggle--off" type="button" aria-label="Переключатель
-            меню"></button>
+          меню"></button>
         <ul class="main-menu">
           <li class="menu__item">
-            <a class="menu__link">Каталог товаров</a>
+            <a class="menu__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="form.html">Вязание на заказ</a>
@@ -37,29 +38,41 @@
         </ul>
         <ul class="user-menu">
           <li class="user-menu__item">
-            <a href="#" class="user-menu__link">Поиск по сайту</a>
-            <a href="#" class="user-menu__icon-link">
-              <svg class="user-menu__icon">
+            <a href="#" class="user-menu__icon-link user-menu__icon-link--search">
+              <svg class="user-menu__icon" width="18" height="18" aria-label="Поиск">
                 <use xlink:href="img/icons/sprite/sprite.svg#icon-search"></use>
               </svg>
             </a>
+            <a href="#" class="user-menu__link user-menu__link--search">Поиск по
+              сайту</a>
           </li>
           <li class="user-menu__item">
-            <a href="#" class="user-menu__link">Корзина: пока пуста</a>
-            <a href="#" class="user-menu__icon-link">
-              <svg class="user-menu__icon">
+            <a href="#" class="user-menu__icon-link user-menu__icon-link--cart">
+              <svg class="user-menu__icon" width="21" height="18" aria-label="Корзина">
                 <use xlink:href="img/icons/sprite/sprite.svg#icon-cart"></use>
               </svg>
             </a>
+            <a href="#" class="user-menu__link user-menu__link--cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-submenu">
+          <li class="main-submenu__item">
+            <a href="#" class="main-submenu__link">Новые поступления</a>
+          </li>
+          <li class="main-submenu__item">
+            <a href="#" class="main-submenu__link">Распродажа</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__title-wrap">
-      <h1 class="page-main__title">Каталог товаров</h1>
-    </div>
+    <section class="promo promo--inner-page">
+      <div class="promo__wrapper promo__wrapper--inner-page">
+        <p class="promo__delivery">Бесплатная доставка по России</p>
+        <h1 class="page-title page-title--inner-page">Каталог товаров</h1>
+      </div>
+    </section>
     <section class="catalog">
       <h2 class="visually-hidden">Карточки товаров</h2>
       <ul class="catalog__cards">
