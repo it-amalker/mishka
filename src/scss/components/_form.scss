@@ -1,1 +1,174 @@
+.form {
+  padding: 22px 0 55px 0;
+}
 
+.form-container {
+  @include container-mobile;
+}
+
+.form__info {
+  font-size: 13px;
+  color: #444444;
+}
+
+.form__title {
+  width: 62px;
+
+  line-height: 16px;
+  color: $color-downy;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form__label {
+  line-height: 18px;
+  font-weight: bold;
+}
+
+
+
+/********  Radio inputs section *********/
+
+
+.form__order-type {
+  margin-top: 24px;
+  margin-bottom: 44px;
+  padding: 0;
+  padding-top: 34px;
+}
+
+.order-type {
+  border: none;
+  border-top: 1px solid $color-downy;
+}
+
+.order-type__item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.order-type__input {
+  position: relative;
+
+  + .order-type__label {
+    position: relative;
+
+    width: 100%;
+    padding-left: 62px;
+
+    cursor: pointer;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      top: -10px;
+      left: 0;
+
+      width: 40px;
+      height: 40px;
+
+      border: 3px solid #444444;
+      border-radius: 50%;
+    }
+  }
+}
+
+.order-type__input:checked {
+  position: relative;
+
+  + .order-type__label {
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 2px;
+      left: 12px;
+
+      width: 16px;
+      height: 16px;
+
+      background-color: $color-downy;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+/******** Checkbox inputs section ********/
+
+
+.form__color-type {
+  margin-bottom: 42px;
+  padding: 0;
+  padding-top: 36px;
+}
+
+.color-type {
+  border: none;
+  border-top: 1px solid $color-downy;
+}
+
+.color-type__item {
+  margin-bottom: 43px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.color-type__input {
+  position: relative;
+
+  + .color-type__label {
+    position: relative;
+
+    padding-left: 64px;
+
+    cursor: pointer;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      top: -6px;
+      left: 0;
+
+      width: 40px;
+      height: 39px;
+
+      border: 2px solid #444444;
+    }
+  }
+}
+
+.color-type__input:checked {
+  position: relative;
+
+  + .color-type__label {
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 6px;
+      left: 9px;
+
+      width: 22px;
+      height: 10px;
+
+      border-left: 2px solid #000000;
+      border-bottom: 2px solid #000000;
+
+      transform: rotate(-45deg);
+    }
+  }
+}
