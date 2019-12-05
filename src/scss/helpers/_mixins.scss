@@ -13,3 +13,8 @@
   margin: 0 auto;
   padding: 0 50px;
 }
+
+@mixin container-desktop--inner-page {
+  width: 1150px;
+  margin: 0 auto;
+}
