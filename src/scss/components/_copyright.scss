@@ -36,5 +36,6 @@
 @media (min-width: $desktop-screen) {
   .copyright {
     width: 350px;
+    justify-content: flex-end;
   }
 }

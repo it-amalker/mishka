@@ -1942,6 +1942,13 @@ img {
     padding-top: 51px;
     padding-bottom: 51px;
   }
+  .page-footer__wrapper--inner-page {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 51px;
+    padding-bottom: 51px;
+  }
 }
 
 .footer-logo {
@@ -2083,6 +2090,10 @@ img {
 @media (min-width: 1150px) {
   .copyright {
     width: 350px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 }
 
