@@ -25,6 +25,21 @@
   font-weight: bold;
 }
 
+.form__input {
+  width: 100%;
+  padding: 16px 0;
+
+  line-height: 18px;
+  color: #444444;
+
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    color: rgba(#444444, 0.3);
+  }
+}
+
 
 
 /********  Radio inputs section *********/
@@ -171,4 +186,157 @@
       transform: rotate(-45deg);
     }
   }
+}
+
+
+/******** Full name section ********/
+
+
+.form__full-name {
+  margin-bottom: 32px;
+  padding: 0;
+  padding-top: 29px;
+}
+
+.full-name {
+  border: none;
+  border-top: 1px solid $color-downy;
+}
+
+.full-name__label {
+  display: block;
+}
+
+.full-name__input {
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/******** Tel section ********/
+
+
+.form__contact-tel {
+  margin-bottom: 32px;
+  padding: 0;
+  padding-top: 7px;
+}
+
+.contact-tel {
+  border: none;
+  border-top: 1px solid $color-downy;
+}
+
+.contact-tel__input-wrap {
+  position: relative;
+}
+
+.contact-tel__input {
+  padding-right: 35px;
+}
+
+.contact-tel__icon {
+  content: '';
+
+  position: absolute;
+  top: 11px;
+  right: 8px;
+
+  width: 25px;
+  height: 24px;
+
+  opacity: 0.2;
+}
+
+/******** Email section ********/
+
+
+.form__contact-email {
+  margin-bottom: 32px;
+  padding: 0;
+  padding-top: 7px;
+}
+
+.contact-email {
+  border: none;
+  border-top: 1px solid $color-downy;
+}
+
+.contact-email__title {
+  width: 81px;
+}
+
+.contact-email__input-wrap {
+  position: relative;
+}
+
+.contact-email__input {
+  padding-right: 40px;
+}
+
+.contact-email__icon {
+  content: '';
+
+  position: absolute;
+  top: 16px;
+  right: 3px;
+
+  width: 32px;
+  height: 21px;
+
+  opacity: 0.2;
+}
+
+
+/******** Message section ********/
+
+
+.form__message {
+  margin-bottom: 16px;
+  padding: 0;
+  padding-top: 25px;
+}
+
+.message {
+  border: none;
+  border-top: 1px solid $color-downy;
+}
+
+.form__message__input {
+  height: 142px;
+  padding: 16px;
+
+  border: 2px solid #000000;
+
+  resize: none;
+}
+
+
+/******** Button and notice section ********/
+
+
+.form__button-wrap {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__button {
+  width: 260px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.form__notice {
+  margin-bottom: 31px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
 }

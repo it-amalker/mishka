@@ -2662,6 +2662,35 @@ img {
   font-weight: bold;
 }
 
+.form__input {
+  width: 100%;
+  padding: 16px 0;
+  line-height: 18px;
+  color: #444444;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__input::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__input::-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__input::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 /********  Radio inputs section *********/
 .form__order-type {
   margin-top: 24px;
@@ -2789,4 +2818,145 @@ img {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+/******** Full name section ********/
+.form__full-name {
+  margin-bottom: 32px;
+  padding: 0;
+  padding-top: 29px;
+}
+
+.full-name {
+  border: none;
+  border-top: 1px solid #63d1bb;
+}
+
+.full-name__label {
+  display: block;
+}
+
+.full-name__input {
+  margin-bottom: 22px;
+}
+
+.full-name__input:last-child {
+  margin-bottom: 0;
+}
+
+/******** Tel section ********/
+.form__contact-tel {
+  margin-bottom: 32px;
+  padding: 0;
+  padding-top: 7px;
+}
+
+.contact-tel {
+  border: none;
+  border-top: 1px solid #63d1bb;
+}
+
+.contact-tel__input-wrap {
+  position: relative;
+}
+
+.contact-tel__input {
+  padding-right: 35px;
+}
+
+.contact-tel__icon {
+  content: '';
+  position: absolute;
+  top: 11px;
+  right: 8px;
+  width: 25px;
+  height: 24px;
+  opacity: 0.2;
+}
+
+/******** Email section ********/
+.form__contact-email {
+  margin-bottom: 32px;
+  padding: 0;
+  padding-top: 7px;
+}
+
+.contact-email {
+  border: none;
+  border-top: 1px solid #63d1bb;
+}
+
+.contact-email__title {
+  width: 81px;
+}
+
+.contact-email__input-wrap {
+  position: relative;
+}
+
+.contact-email__input {
+  padding-right: 40px;
+}
+
+.contact-email__icon {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 3px;
+  width: 32px;
+  height: 21px;
+  opacity: 0.2;
+}
+
+/******** Message section ********/
+.form__message {
+  margin-bottom: 16px;
+  padding: 0;
+  padding-top: 25px;
+}
+
+.message {
+  border: none;
+  border-top: 1px solid #63d1bb;
+}
+
+.form__message__input {
+  height: 142px;
+  padding: 16px;
+  border: 2px solid #000000;
+  resize: none;
+}
+
+/******** Button and notice section ********/
+.form__button-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form__button {
+  width: 260px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form__notice {
+  margin-bottom: 31px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
 }

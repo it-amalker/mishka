@@ -90,103 +90,123 @@
           </li>
         </ul>
       </fieldset>
-      <div class="form__color-type__wrapper"></div>
-      <fieldset class="form__color-type color-type form-container">
-        <legend class="form__title">Цвет</legend>
-        <ul class="color-type__list">
-          <li class="color-type__item">
-            <input class="color-type__input visually-hidden" type="checkbox" name="white" id="white" checked>
-            <label class="color-type__label form__label" for="white">Белый</label>
-          </li>
-          <li class="color-type__item">
-            <input class="color-type__input visually-hidden" type="checkbox" name="gray" id="gray" checked>
-            <label class="color-type__label form__label" for="gray">Серый</label>
-          </li>
-          <li class="color-type__item">
-            <input class="color-type__input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
-            <label class="color-type__label form__label" for="tiffany">&laquo;Тиффани&raquo;</label>
-          </li>
-          <li class="color-type__item">
-            <input class="color-type__input visually-hidden" type="checkbox" name="black" id="black">
-            <label class="color-type__label form__label" for="black">Черный</label>
-          </li>
-          <li class="color-type__item">
-            <input class="color-type__input visually-hidden" type="checkbox" name="pink" id="pink">
-            <label class="color-type__label form__label" for="pink">Розовый</label>
-          </li>
-          <li class="color-type__item">
-            <input class="color-type__input visually-hidden" type="checkbox" name="orange" id="orange">
-            <label class="color-type__label form__label" for="orange">Оранжевый</label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="form__color-type__wrapper">
+        <fieldset class="form__color-type color-type form-container">
+          <legend class="form__title">Цвет</legend>
+          <ul class="color-type__list">
+            <li class="color-type__item">
+              <input class="color-type__input visually-hidden" type="checkbox" name="white" id="white" checked>
+              <label class="color-type__label form__label" for="white">Белый</label>
+            </li>
+            <li class="color-type__item">
+              <input class="color-type__input visually-hidden" type="checkbox" name="gray" id="gray" checked>
+              <label class="color-type__label form__label" for="gray">Серый</label>
+            </li>
+            <li class="color-type__item">
+              <input class="color-type__input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+              <label class="color-type__label form__label" for="tiffany">&laquo;Тиффани&raquo;</label>
+            </li>
+            <li class="color-type__item">
+              <input class="color-type__input visually-hidden" type="checkbox" name="black" id="black">
+              <label class="color-type__label form__label" for="black">Черный</label>
+            </li>
+            <li class="color-type__item">
+              <input class="color-type__input visually-hidden" type="checkbox" name="pink" id="pink">
+              <label class="color-type__label form__label" for="pink">Розовый</label>
+            </li>
+            <li class="color-type__item">
+              <input class="color-type__input visually-hidden" type="checkbox" name="orange" id="orange">
+              <label class="color-type__label form__label" for="orange">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
       </div>
       <fieldset class="form__full-name full-name form-container">
         <legend class="form__title">ФИО</legend>
         <label class="full-name__label form__label" for="name">Имя:</label>
-        <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+        <input class="full-name__input form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*"
+          required>
         <label class="full-name__label form__label" for="surname">Фамилия:</label>
-        <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+        <input class="full-name__input form__input" type="text" name="surname" id="surname"
+          placeholder="Укажите фамилию*" required>
         <label class="full-name__label form__label" for="patronymic">Отчество:</label>
-        <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+        <input class="full-name__input form__input" type="text" name="patronymic" id="patronymic"
+          placeholder="Отчество, если желаете">
       </fieldset>
       <div class="form-contacts__wrapper">
         <fieldset class="form__contact-tel contact-tel form-container">
           <legend class="form__title">Тел</legend>
-          <input type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" aria-label="Номер телефона" required>
+          <div class="contact-tel__input-wrap">
+            <input class="contact-tel__input form__input" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*"
+              aria-label="Номер телефона" required>
+            <svg class="contact-tel__icon" width="25" height="24">
+              <use xlink:href="img/icons/sprite/sprite.svg#icon-tel"></use>
+            </svg>
+          </div>
         </fieldset>
         <fieldset class="form__contact-email contact-email form-container">
-          <legend class="form__title">E-mail</legend>
-          <input type="email" name="email" id="email" placeholder="Ваш Email*" aria-label="Электронная почта" required>
+          <legend class="contact-email__title form__title">E-mail</legend>
+          <div class="contact-email__input-wrap">
+            <input class="contact-email__input form__input" type="email" name="email" id="email"
+              placeholder="Ваш Email*" aria-label="Электронная почта" required>
+            <svg class="contact-email__icon" width="32" height="21">
+              <use xlink:href="img/icons/sprite/sprite.svg#icon-mail"></use>
+            </svg>
+          </div>
         </fieldset>
       </div>
       <fieldset class="form__message message form-container">
         <legend class="form__title">Доп</legend>
-        <textarea name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <textarea class="form__message__input form__input" name="message" id="message"
+          placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
-      <button class="form__button" type="submit">Отправить заказ</button>
-      <p class="form__notice">*Поля обязательны для заполнения</p>
+      <div class="form__button-wrap form-container">
+        <button class="form__button button" type="submit">Отправить заказ</button>
+        <p class="form__notice">*Поля обязательны для заполнения</p>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="footer-logo">
-      <a href="#">
-        <svg class="footer-logo__icon">
-          <use xlink:href="img/icons/sprite/sprite.svg#footer-logo"></use>
-        </svg>
-      </a>
-    </div>
-    <ul class="socials">
-      <li class="socials__items">
-        <a href="#" class="socials__link" aria-label="Instagram">
-          <svg class="footer-logo__icon">
-            <use xlink:href="img/icons/sprite/sprite.svg#social-insta"></use>
+    <div class="page-footer__wrapper page-footer__wrapper--inner-page">
+      <div class="footer-logo">
+        <a href="#">
+          <svg class="footer-logo__icon" width="102" height="34">
+            <use xlink:href="img/icons/sprite/sprite.svg#footer-logo"></use>
           </svg>
         </a>
-      </li>
-      <li class="socials__items">
-        <a href="#" class="socials__link" aria-label="Facebook">
-          <svg class="footer-logo__icon">
-            <use xlink:href="img/icons/sprite/sprite.svg#social-fb"></use>
+      </div>
+      <ul class="socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="Instagram">
+            <svg class="footer-logo__icon footer-logo__icon--insta" width="22" height="21">
+              <use xlink:href="img/icons/sprite/sprite.svg#social-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="Facebook">
+            <svg class="footer-logo__icon footer-logo__icon--fb" width="15" height="28">
+              <use xlink:href="img/icons/sprite/sprite.svg#social-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--tw" aria-label="Twitter">
+            <svg class="footer-logo__icon footer-logo__icon--tw" width="23" height="20">
+              <use xlink:href="img/icons/sprite/sprite.svg#social-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__developer"
+          aria-label="Логотип HTML Academy">
+          <svg class="copyright__developer-icon" width="27" height="34">
+            <use xlink:href="img/icons/sprite/sprite.svg#html-academy-logo"></use>
           </svg>
         </a>
-      </li>
-      <li class="socials__items">
-        <a href="#" class="socials__link" aria-label="Twitter">
-          <svg class="footer-logo__icon">
-            <use xlink:href="img/icons/sprite/sprite.svg#social-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <div class="copyright">
-      <p class="copyright__text">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__developer"
-        aria-label="Логотип HTML Academy">
-        <svg class="copyright__developer-icon">
-          <use xlink:href="img/icons/sprite/sprite.svg#html-academy-logo"></use>
-        </svg>
-      </a>
+      </div>
     </div>
   </footer>
   <script src="js/libs.min.js"></script>
