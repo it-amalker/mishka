@@ -92,7 +92,7 @@
       </fieldset>
       <div class="form__color-type__wrapper">
         <fieldset class="form__color-type color-type form-container">
-          <legend class="form__title">Цвет</legend>
+          <legend class="color-type__title form__title">Цвет</legend>
           <ul class="color-type__list">
             <li class="color-type__item">
               <input class="color-type__input visually-hidden" type="checkbox" name="white" id="white" checked>
@@ -122,20 +122,22 @@
         </fieldset>
       </div>
       <fieldset class="form__full-name full-name form-container">
-        <legend class="form__title">ФИО</legend>
-        <label class="full-name__label form__label" for="name">Имя:</label>
-        <input class="full-name__input form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*"
-          required>
-        <label class="full-name__label form__label" for="surname">Фамилия:</label>
-        <input class="full-name__input form__input" type="text" name="surname" id="surname"
-          placeholder="Укажите фамилию*" required>
-        <label class="full-name__label form__label" for="patronymic">Отчество:</label>
-        <input class="full-name__input form__input" type="text" name="patronymic" id="patronymic"
-          placeholder="Отчество, если желаете">
+        <legend class="full-name__title form__title">ФИО</legend>
+        <div class="full-name__wrap">
+          <label class="full-name__label form__label" for="name">Имя:</label>
+          <input class="full-name__input form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*"
+            required>
+          <label class="full-name__label form__label" for="surname">Фамилия:</label>
+          <input class="full-name__input form__input" type="text" name="surname" id="surname"
+            placeholder="Укажите фамилию*" required>
+          <label class="full-name__label form__label" for="patronymic">Отчество:</label>
+          <input class="full-name__input form__input" type="text" name="patronymic" id="patronymic"
+            placeholder="Отчество, если желаете">
+        </div>
       </fieldset>
       <div class="form-contacts__wrapper">
         <fieldset class="form__contact-tel contact-tel form-container">
-          <legend class="form__title">Тел</legend>
+          <legend class="contact-tel__title form__title">Тел</legend>
           <div class="contact-tel__input-wrap">
             <input class="contact-tel__input form__input" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*"
               aria-label="Номер телефона" required>
