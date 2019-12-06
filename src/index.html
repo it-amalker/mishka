@@ -115,7 +115,7 @@
         </picture>
         <div class="bestseller__price-wrap">
           <b class="bestseller__price">Цена: 990 руб.</b>
-          <a class="bestseller__order-button button" href="#">Заказать</a>
+          <button class="bestseller__order-button button">Заказать</button>
         </div>
       </div>
     </section>
@@ -135,7 +135,8 @@
         <h2 class="reviews__title">Отзывы</h2>
         <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
           как
-          у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали
+          у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу
+          стали
           более стильными, а также набирают больше лайков!</p>
         <div class="review__nickname-wrap">
           <b class="review__author">Анастасия Красильникова</b>
@@ -215,22 +216,24 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <p class="modal__description">Выберите размер:</p>
-    <ul class="size-select">
-      <li class="size__item">
-        <a href="#" class="size__link" aria-label="Размер S">S</a>
-      </li>
-      <li class="size__item">
-        <a href="#" class="size__link" aria-label="Размер M">M</a>
-      </li>
-      <li class="size__item">
-        <a href="#" class="size__link" aria-label="Размер L">L</a>
-      </li>
-    </ul>
-    <div class="modal__add-button-wrap">
-      <button class="modal__add-button" type="button">Добавить</button>
+  <div class="overlay">
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__description">Выберите размер:</p>
+      <ul class="size-select">
+        <li class="size__item">
+          <a href="#" class="size__link" aria-label="Размер S">S</a>
+        </li>
+        <li class="size__item">
+          <a href="#" class="size__link" aria-label="Размер M">M</a>
+        </li>
+        <li class="size__item">
+          <a href="#" class="size__link" aria-label="Размер L">L</a>
+        </li>
+      </ul>
+      <div class="modal__add-button-wrap">
+        <button class="modal__add-button" type="button">Добавить</button>
+      </div>
     </div>
   </div>
   <script src="js/libs.min.js"></script>
