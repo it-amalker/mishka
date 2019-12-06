@@ -47,7 +47,6 @@ gulp.task('js', function () {
       }
     }))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('src/js'))
     .pipe(browserSync.reload({ stream: true }))
 });
 
@@ -144,7 +143,7 @@ gulp.task('pack', async function () {
 gulp.task('watch', function () {
   gulp.watch('src/scss/**/*.scss', gulp.parallel('scss'))
   gulp.watch('src/*.html', gulp.parallel('html'))
-  gulp.watch('src/*.js', gulp.parallel('js'))
+  gulp.watch('src/js/*.js', gulp.parallel('js'))
   gulp.watch(['src/img/*.*', 'src/img/content/*.*'], gulp.parallel('img'))
   gulp.watch('src/img/icons/*.svg', gulp.parallel('svgSpriteBuild'))
 });
