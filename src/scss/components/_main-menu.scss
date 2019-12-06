@@ -1,3 +1,11 @@
+.main-menu {
+  display: none;
+}
+
+.main-menu--active {
+  display: block;
+}
+
 .menu__item {
   display: block;
 

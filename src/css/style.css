@@ -498,22 +498,28 @@ img {
   cursor: pointer;
 }
 
-.nav-toggle--off {
+.nav-toggle-off {
   background-image: -o-linear-gradient(top, #444444 0, #444444 2px, transparent 2px, transparent 6px, #444444 6px, #444444 8px, transparent 8px, transparent 12px, #444444 12px, #444444 14px);
   background-image: linear-gradient(to bottom, #444444 0, #444444 2px, transparent 2px, transparent 6px, #444444 6px, #444444 8px, transparent 8px, transparent 12px, #444444 12px, #444444 14px);
+  display: none;
   width: 20px;
   height: 14px;
 }
 
-.nav-toggle--off:hover {
+.nav-toggle-off:hover {
   opacity: 0.6;
 }
 
-.nav-toggle--off:active {
+.nav-toggle-off:active {
   opacity: 0.3;
 }
 
-.nav-toggle--on {
+.nav-toggle-off--active {
+  display: block;
+}
+
+.nav-toggle-on {
+  display: none;
   width: 21px;
   height: 20px;
   background-image: url("../../img/icons/sprite/sprite.svg#icon-cross");
@@ -522,12 +528,16 @@ img {
   background-size: cover;
 }
 
-.nav-toggle--on:hover {
+.nav-toggle-on:hover {
   opacity: 0.6;
 }
 
-.nav-toggle--on:active {
+.nav-toggle-on:active {
   opacity: 0.3;
+}
+
+.nav-toggle-on--active {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -556,6 +566,14 @@ img {
     -ms-flex-align: center;
     align-items: center;
   }
+}
+
+.main-menu {
+  display: none;
+}
+
+.main-menu--active {
+  display: block;
 }
 
 .menu__item {
@@ -635,6 +653,14 @@ img {
     padding: 31px 35px 33px 0;
     font-size: 17px;
   }
+}
+
+.user-menu {
+  display: none;
+}
+
+.user-menu--active {
+  display: block;
 }
 
 .user-menu__item {

@@ -1,3 +1,11 @@
+.user-menu {
+  display: none;
+}
+
+.user-menu--active {
+  display: block;
+}
+
 .user-menu__item {
   display: flex;
   align-items: center;
