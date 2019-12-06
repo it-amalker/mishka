@@ -78,12 +78,16 @@
 
   border: 2px solid rgba(#444444, 0.1);
 
+  &:hover {
+    border-color: rgba(#444444, 0.3);
+  }
+
   &--active {
     border-color: $color-downy;
   }
 
-  &:hover {
-    border-color: rgba(#444444, 0.3);
+  &--active:hover {
+    border-color: $color-downy;
   }
 }
 

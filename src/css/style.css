@@ -2214,12 +2214,16 @@ img {
   border: 2px solid rgba(68, 68, 68, 0.1);
 }
 
+.size__link:hover {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
 .size__link--active {
   border-color: #63d1bb;
 }
 
-.size__link:hover {
-  border-color: rgba(68, 68, 68, 0.3);
+.size__link--active:hover {
+  border-color: #63d1bb;
 }
 
 .modal__add-button {

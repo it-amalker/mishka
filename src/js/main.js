@@ -40,3 +40,10 @@ document.querySelector('.overlay').addEventListener('click', function () {
 popup.addEventListener("click", function (evt) {
   evt.stopPropagation();
 });
+
+// Selecting certain size
+
+document.querySelector('.size-select').addEventListener('click', (evt) => {
+  evt.preventDefault();
+  evt.target.classList.toggle('size__link--active');
+});
