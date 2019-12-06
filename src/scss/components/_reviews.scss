@@ -69,6 +69,22 @@
     }
   }
 
+  .webp .reviews__wrapper::before {
+    background-image: url("../img/content/review@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/content/review@2x.webp");
+    }
+  }
+
+  .no-webp .reviews__wrapper::before {
+    background-image: url("../img/content/review@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/content/review@2x.jpg");
+    }
+  }
+
   .reviews__wrapper {
     @include container-tablet;
 
@@ -88,9 +104,12 @@
       width: 350px;
       height: 457px;
 
-      background-image: url('../../img/content/review@1x.jpg');
       background-repeat: no-repeat;
       background-position: 0 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-size: 350px auto;
+      }
     }
   }
 
