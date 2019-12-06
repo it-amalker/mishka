@@ -816,6 +816,11 @@ img {
   }
 }
 
+.webp .promo--inner-page,
+.no-webp .promo--inner-page {
+  background-image: none;
+}
+
 .promo {
   width: 100%;
   min-height: 488px;
@@ -834,7 +839,6 @@ img {
 .promo--inner-page {
   min-height: 177px;
   background-color: #f1f1f1;
-  background-image: none;
 }
 
 .promo__delivery {
@@ -929,6 +933,10 @@ img {
 }
 
 @media (min-width: 768px) {
+  .webp .promo--inner-page,
+  .no-webp .promo--inner-page {
+    background-image: none;
+  }
   .promo {
     position: relative;
     min-height: 757px;
@@ -1052,6 +1060,10 @@ img {
 }
 
 @media (min-width: 1150px) {
+  .webp .promo--inner-page,
+  .no-webp .promo--inner-page {
+    background-image: none;
+  }
   .promo {
     position: relative;
     min-height: 762px;
