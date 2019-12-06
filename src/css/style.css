@@ -493,33 +493,24 @@ img {
   position: absolute;
   top: 28px;
   right: 0;
+  width: 20px;
+  height: 14px;
+  background-image: -o-linear-gradient(top, #444444 0, #444444 2px, transparent 2px, transparent 6px, #444444 6px, #444444 8px, transparent 8px, transparent 12px, #444444 12px, #444444 14px);
+  background-image: linear-gradient(to bottom, #444444 0, #444444 2px, transparent 2px, transparent 6px, #444444 6px, #444444 8px, transparent 8px, transparent 12px, #444444 12px, #444444 14px);
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.nav-toggle-off {
-  background-image: -o-linear-gradient(top, #444444 0, #444444 2px, transparent 2px, transparent 6px, #444444 6px, #444444 8px, transparent 8px, transparent 12px, #444444 12px, #444444 14px);
-  background-image: linear-gradient(to bottom, #444444 0, #444444 2px, transparent 2px, transparent 6px, #444444 6px, #444444 8px, transparent 8px, transparent 12px, #444444 12px, #444444 14px);
-  display: none;
-  width: 20px;
-  height: 14px;
-}
-
-.nav-toggle-off:hover {
+.nav-toggle:hover {
   opacity: 0.6;
 }
 
-.nav-toggle-off:active {
+.nav-toggle:active {
   opacity: 0.3;
 }
 
-.nav-toggle-off--active {
-  display: block;
-}
-
-.nav-toggle-on {
-  display: none;
+.nav-toggle--close {
   width: 21px;
   height: 20px;
   background-image: url("../../img/icons/sprite/sprite.svg#icon-cross");
@@ -528,16 +519,12 @@ img {
   background-size: cover;
 }
 
-.nav-toggle-on:hover {
+.nav-toggle--close:hover {
   opacity: 0.6;
 }
 
-.nav-toggle-on:active {
+.nav-toggle--close:active {
   opacity: 0.3;
-}
-
-.nav-toggle-on--active {
-  display: block;
 }
 
 @media (min-width: 768px) {

@@ -7,33 +7,24 @@
   top: 28px;
   right: 0;
 
+  width: 20px;
+  height: 14px;
+
+  background-image: $burger-menu;
   background-color: transparent;
   border: none;
 
   cursor: pointer;
 
-  &-off {
-    background-image: $burger-menu;
-
-    display: none;
-    width: 20px;
-    height: 14px;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    &--active {
-      display: block;
-    }
+  &:hover {
+    opacity: 0.6;
   }
 
-  &-on {
-    display: none;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--close {
     width: 21px;
     height: 20px;
 
@@ -48,10 +39,6 @@
 
     &:active {
       opacity: 0.3;
-    }
-
-    &--active {
-      display: block;
     }
   }
 }
