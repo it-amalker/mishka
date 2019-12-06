@@ -7,9 +7,9 @@
   <meta name="format-detection" content="telephone=no">
   <title>Каталог товаров</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -26,8 +26,9 @@
             </picture>
           </a>
         </div>
-        <button class="nav-toggle nav-toggle--off" type="button" aria-label="Переключатель
-          меню"></button>
+        <button class="nav-toggle nav-toggle-off nav-toggle-off--active" type="button"
+          aria-label="Кнопка открытия меню"></button>
+        <button class="nav-toggle nav-toggle-on" type="button" aria-label="Кнопка закрытия меню"></button>
         <ul class="main-menu">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
