@@ -81,6 +81,14 @@
   text-align: center;
 }
 
+.bestseller__order-button {
+  width: 260px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-screen) {
   .bestseller {
     min-height: 613px;
@@ -160,6 +168,10 @@
     margin-bottom: 34px;
 
     font-size: 20px;
+  }
+
+  .bestseller__order-button {
+    width: 292px;
   }
 }
 
