@@ -208,7 +208,7 @@
   .features {
     @include container-desktop;
 
-    padding: 61px 0 91px 0;
+    padding: 59px 0 91px 0;
   }
 
   .features__title {
@@ -226,15 +226,5 @@
 
   .features__item {
     width: 350px;
-
-    &:nth-child(-n + 2) {
-      padding-top: 101px;
-    }
-
-    &::before {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
   }
 }

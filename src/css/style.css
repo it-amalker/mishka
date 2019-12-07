@@ -476,7 +476,8 @@ img {
     -ms-flex-order: 2;
     order: 2;
     width: 149px;
-    padding: 9px 0 7px 0;
+    margin-left: 74px;
+    padding: 9px 0 1px 0;
     text-align: center;
   }
   .main-logo__icon {
@@ -533,10 +534,10 @@ img {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: auto;
+    -webkit-justify-content: auto;
+    -ms-flex-pack: auto;
+    justify-content: auto;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -714,6 +715,7 @@ img {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin-left: auto;
   }
   .user-menu__item {
     border-top: none;
@@ -753,7 +755,7 @@ img {
     padding: 31px 0 33px 0;
   }
   .user-menu__link--cart {
-    margin-left: 31px;
+    margin-left: 33px;
   }
 }
 
@@ -778,11 +780,11 @@ img {
     width: 350px;
   }
   .main-submenu__item:first-child {
-    padding-right: 60px;
+    margin-right: 61px;
   }
   .main-submenu__link {
     display: block;
-    padding: 18px 0;
+    padding: 17px 0;
     font-size: 15px;
     color: #000000;
     font-weight: bold;
@@ -1094,7 +1096,7 @@ img {
     width: 1150px;
     margin: 0 auto;
     padding: 0 50px;
-    padding-top: 155px;
+    padding-top: 153px;
   }
   .promo__wrapper--inner-page {
     width: 1050px;
@@ -1103,7 +1105,8 @@ img {
     padding-top: 96px;
   }
   .promo__delivery {
-    top: 19px;
+    top: 17px;
+    right: 51px;
   }
   .page-title {
     max-width: 615px;
@@ -1117,7 +1120,7 @@ img {
   }
   .promo-buttons__link {
     width: 525px;
-    padding: 28px 10px 31px 37px;
+    padding: 29px 10px 30px 37px;
   }
   .promo-buttons__link--toys::after {
     top: 32px;
@@ -1328,7 +1331,7 @@ img {
 @media (min-width: 1150px) {
   .bestseller {
     min-height: 786px;
-    padding-top: 108px;
+    padding-top: 120px;
   }
   .bestseller::after {
     height: 23px;
@@ -1340,12 +1343,12 @@ img {
   }
   .bestseller__title-wrap {
     position: relative;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
   .bestseller__title {
     position: absolute;
     top: -14px;
-    left: 175px;
+    left: 172px;
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -1357,7 +1360,8 @@ img {
   }
   .bestseller__info-plate {
     position: relative;
-    left: 47px;
+    top: 2px;
+    left: 43px;
     width: 77px;
   }
   .bestseller__content-wrap {
@@ -1381,6 +1385,9 @@ img {
     width: 292px;
     margin-left: 175px;
     margin-top: -110px;
+  }
+  .bestseller__price {
+    margin-bottom: 35px;
   }
 }
 
@@ -1597,7 +1604,7 @@ img {
     width: 1150px;
     margin: 0 auto;
     padding: 0 50px;
-    padding: 61px 0 91px 0;
+    padding: 59px 0 91px 0;
   }
   .features__title {
     width: 700px;
@@ -1611,14 +1618,6 @@ img {
   }
   .features__item {
     width: 350px;
-  }
-  .features__item:nth-child(-n + 2) {
-    padding-top: 101px;
-  }
-  .features__item::before {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 }
 
@@ -1802,13 +1801,13 @@ img {
     width: 1150px;
     margin: 0 auto;
     padding: 0 50px;
-    padding-left: 175px;
+    padding-left: 224px;
   }
   .reviews__wrapper::before {
     content: "";
     position: absolute;
     top: -71px;
-    left: 0;
+    left: 50px;
   }
   .reviews__title {
     margin-bottom: 48px;
@@ -1816,6 +1815,7 @@ img {
     line-height: 57px;
   }
   .review__text {
+    max-width: 775px;
     margin-bottom: 39px;
   }
   .review__author {
@@ -1824,7 +1824,7 @@ img {
   .reviews-button {
     height: 52px;
     margin-top: 8px;
-    margin-bottom: 48px;
+    margin-bottom: 45px;
   }
 }
 
@@ -2016,7 +2016,7 @@ img {
 @media (min-width: 1150px) {
   .contacts {
     min-height: 633px;
-    padding-top: 143px;
+    padding-top: 141px;
   }
   .contacts__wrapper {
     width: 1150px;
@@ -2029,20 +2029,21 @@ img {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    height: 492px;
   }
   .contacts__title {
     width: 100%;
     margin: 0;
     padding: 0;
-    margin-bottom: 46px;
-    padding-left: 175px;
+    margin-bottom: 49px;
+    padding-left: 170px;
     font-size: 53px;
     line-height: 57px;
   }
   .contacts__title::after {
-    top: -10px;
+    top: -8px;
     right: auto;
-    left: 63px;
+    left: 62px;
   }
   .contacts__info-wrap {
     width: 525px;
@@ -2056,7 +2057,7 @@ img {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 0;
-    padding-left: 175px;
+    padding-left: 174px;
   }
   .contacts__email,
   .contacts__address {
@@ -2066,10 +2067,10 @@ img {
     margin-bottom: 30px;
   }
   .contacts__email-link {
-    margin-left: 32px;
+    margin-left: 25px;
   }
   .contacts__address-text {
-    margin-left: 32px;
+    margin-left: 25px;
   }
   .contacts__map-position {
     position: relative;
@@ -2078,7 +2079,7 @@ img {
   }
   .contacts__button-wrap {
     width: 50%;
-    margin-top: -227px;
+    margin-top: -228px;
   }
   .contacts__button {
     margin: 0;

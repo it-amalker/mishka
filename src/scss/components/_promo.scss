@@ -304,7 +304,7 @@
   .promo__wrapper {
     @include container-desktop;
 
-    padding-top: 155px;
+    padding-top: 153px;
 
     &--inner-page {
       @include container-desktop--inner-page;
@@ -314,7 +314,8 @@
   }
 
   .promo__delivery {
-    top: 19px;
+    top: 17px;
+    right: 51px;
   }
 
   .page-title {
@@ -333,7 +334,7 @@
 
   .promo-buttons__link {
     width: 525px;
-    padding: 28px 10px 31px 37px;
+    padding: 29px 10px 30px 37px;
 
     &--toys::after {
       top: 32px;

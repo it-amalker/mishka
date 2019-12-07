@@ -134,7 +134,7 @@
 @media (min-width: $desktop-screen) {
   .contacts {
     min-height: 633px;
-    padding-top: 143px;
+    padding-top: 141px;
   }
 
   .contacts__wrapper {
@@ -142,22 +142,23 @@
 
     display: flex;
     flex-wrap: wrap;
+    height: 492px;
   }
 
   .contacts__title {
     width: 100%;
     margin: 0;
     padding: 0;
-    margin-bottom: 46px;
-    padding-left: 175px;
+    margin-bottom: 49px;
+    padding-left: 170px;
 
     font-size: 53px;
     line-height: 57px;
 
     &::after {
-      top: -10px;
+      top: -8px;
       right: auto;
-      left: 63px;
+      left: 62px;
     }
   }
 
@@ -167,7 +168,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding-left: 175px;
+    padding-left: 174px;
   }
 
   .contacts__email,
@@ -180,11 +181,11 @@
   }
 
   .contacts__email-link {
-    margin-left: 32px;
+    margin-left: 25px;
   }
 
   .contacts__address-text {
-    margin-left: 32px;
+    margin-left: 25px;
   }
 
   .contacts__map-position {
@@ -195,7 +196,7 @@
 
   .contacts__button-wrap {
     width: 50%;
-    margin-top: -227px;
+    margin-top: -228px;
   }
 
   .contacts__button {

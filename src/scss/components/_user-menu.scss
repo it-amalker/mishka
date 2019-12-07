@@ -62,6 +62,7 @@
 @media (min-width: $tablet-screen) {
   .user-menu {
     display: flex;
+    margin-left: auto;
   }
 
   .user-menu__item {
@@ -108,7 +109,7 @@
     padding: 31px 0 33px 0;
 
     &--cart {
-      margin-left: 31px;
+      margin-left: 33px;
     }
   }
 }

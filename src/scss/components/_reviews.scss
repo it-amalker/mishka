@@ -178,14 +178,14 @@
   .reviews__wrapper {
     @include container-desktop;
 
-    padding-left: 175px;
+    padding-left: 224px;
 
     &::before {
       content: "";
 
       position: absolute;
       top: -71px;
-      left: 0;
+      left: 50px;
     }
   }
 
@@ -197,6 +197,7 @@
   }
 
   .review__text {
+    max-width: 775px;
     margin-bottom: 39px;
   }
 
@@ -207,6 +208,6 @@
   .reviews-button {
     height: 52px;
     margin-top: 8px;
-    margin-bottom: 48px;
+    margin-bottom: 45px;
   }
 }

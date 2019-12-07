@@ -183,7 +183,7 @@
 @media (min-width: $desktop-screen) {
   .bestseller {
     min-height: 786px;
-    padding-top: 108px;
+    padding-top: 120px;
 
     &::after {
       height: 23px;
@@ -197,13 +197,13 @@
   .bestseller__title-wrap {
     position: relative;
 
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
 
   .bestseller__title {
     position: absolute;
     top: -14px;
-    left: 175px;
+    left: 172px;
 
     order: 2;
 
@@ -216,7 +216,8 @@
 
   .bestseller__info-plate {
     position: relative;
-    left: 47px;
+    top: 2px;
+    left: 43px;
 
     width: 77px;
   }
@@ -247,5 +248,9 @@
     width: 292px;
     margin-left: 175px;
     margin-top: -110px;
+  }
+
+  .bestseller__price {
+    margin-bottom: 35px;
   }
 }
