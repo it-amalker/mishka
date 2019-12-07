@@ -2590,7 +2590,11 @@ img {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 334px;
-    padding: 24px 32px 26px 28px;
+    padding: 24px 31px 27px 26px;
+  }
+  .catalog__title {
+    max-width: 238px;
+    margin-bottom: 5px;
   }
   .catalog__title-link {
     font-size: 20px;
@@ -2600,6 +2604,7 @@ img {
     font-size: 15px;
   }
   .catalog__price {
+    padding-left: 4px;
     font-size: 17px;
   }
 }
@@ -2783,7 +2788,7 @@ img {
     order: 0;
     margin-bottom: 0;
     padding-left: 106px;
-    padding-top: 38px;
+    padding-top: 37px;
     font-size: 20px;
     border: 1px solid #ececec;
     border-bottom: none;
@@ -2801,13 +2806,13 @@ img {
     height: 455px;
   }
   .video__content-wrap {
-    padding: 33px 40px 45px 40px;
+    padding: 32px 40px 45px 40px;
     border: 1px solid #ececec;
     border-top: none;
   }
   .video__info {
     max-width: 583px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
     font-size: 15px;
     line-height: 30px;
   }
