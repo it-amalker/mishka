@@ -3,19 +3,22 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 11px;
   padding-bottom: 27px;
 
   border-bottom: 1px solid #ececec;
 }
 
+.socials__item {
+  margin-right: 42px;
+
+  &:last-child{
+    margin-right: 7px;
+  }
+}
+
 .socials__link {
   display: block;
-  margin-right: 40px;
-
-  &--tw {
-    margin-right: 0;
-  }
 }
 
 .footer-logo__icon {

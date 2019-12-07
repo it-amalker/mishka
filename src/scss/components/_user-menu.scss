@@ -41,7 +41,7 @@
 .user-menu__link {
   display: block;
   width: 100%;
-  padding: 26px 0 28px 25px;
+  padding: 26px 0 28px 27px;
   color: #000000;
   font-weight: bold;
   text-decoration: none;
@@ -52,6 +52,10 @@
 
   &:active {
     color: rgba(#000000, 0.3);
+  }
+
+  &--cart {
+    padding-left: 24px;
   }
 }
 
@@ -85,7 +89,7 @@
     font-weight: bold;
     text-decoration: none;
 
-    &--search{
+    &--search {
       display: none;
     }
 

@@ -27,7 +27,7 @@
   background-color: #f9f9f9;
 
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -18px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-size: 575px auto;
@@ -79,6 +79,8 @@
   }
 
   &--interior {
+    padding: 26px 30px 30px 27px;
+
     background-color: $color-downy;
   }
 
@@ -102,8 +104,8 @@
   }
 
   &--toys::after {
-    top: 27px;
-    right: 21px;
+    top: 22px;
+    right: 26px;
 
     width: 60px;
     height: 60px;

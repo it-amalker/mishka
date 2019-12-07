@@ -1,7 +1,7 @@
 .features {
   @include container-mobile;
 
-  padding: 28px 0 56px 0;
+  padding: 28px 0 54px 0;
 }
 
 .features__title {
@@ -13,10 +13,29 @@
 .features__item {
   position: relative;
 
-  padding-top: 83px;
+  max-width: 202px;
+
+  padding-top: 85px;
 
   line-height: 20px;
   font-weight: bold;
+
+  &--flower {
+    max-width: 190px;
+  }
+
+  &--heart {
+    padding-top: 81px;
+  }
+
+  &--skein {
+    max-width: 215px;
+  }
+
+  &--rocket {
+    padding-top: 81px;
+    max-width: 255px;
+  }
 
   &::before {
     content: "";

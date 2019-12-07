@@ -1,12 +1,12 @@
 .contacts {
   min-height: 895px;
-  padding-top: 36px;
+  padding-top: 35px;
 }
 
 .contacts__title {
   @include container-mobile;
 
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   font-size: 18px;
   line-height: 30px;
@@ -15,17 +15,20 @@
 .contacts__info-wrap {
   @include container-mobile;
 
-  margin-bottom: 34px;
+  margin-bottom: 37px;
 }
 
 .contacts__email {
+  margin-bottom: 30px;
+
   font-size: 15px;
   line-height: 30px;
   color: #444444;
 }
 
 .contacts__email-link {
-  margin-left: 31px;
+  margin-left: 30px;
+  padding-bottom: 4px;
 
   color: #444444;
   text-decoration: none;
@@ -51,11 +54,7 @@
 
 .contacts__address-text {
   max-width: 142px;
-  margin-left: 31px;
-}
-
-.contacts__address-br {
-  display: none;
+  margin-left: 30px;
 }
 
 .contacts__map-position {
@@ -120,10 +119,6 @@
   .contacts__address-text {
     max-width: 222px;
     margin-left: 26px;
-  }
-
-  .contacts__address-br {
-    display: block;
   }
 
   .contacts__map-position {

@@ -5,7 +5,7 @@
 }
 
 .table__cell {
-  padding: 10px 0;
+  padding: 9px 0 10px 0;
   font-size: 15px;
   line-height: 20px;
   color: #444444;
@@ -13,6 +13,6 @@
   border-bottom: 1px solid #ececec;
 
   &:first-child {
-    width: 98px;
+    width: 97px;
   }
 }
