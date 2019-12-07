@@ -1106,7 +1106,7 @@ img {
   }
   .promo__delivery {
     top: 17px;
-    right: 51px;
+    right: 0;
   }
   .page-title {
     max-width: 615px;
@@ -3489,7 +3489,7 @@ img {
 
 @media (min-width: 1150px) {
   .form {
-    padding: 121px 0 50px 0;
+    padding: 104px 0 50px 0;
   }
   .form-container {
     width: 1050px;
@@ -3520,23 +3520,27 @@ img {
   /******** Checkbox inputs section ********/
   .form__color-type {
     padding-top: 65px;
-    padding-bottom: 68px;
+    padding-bottom: 66px;
   }
   .color-type__title {
-    top: 65px;
+    top: 67px;
   }
   .color-type__list {
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
     width: 875px;
   }
   .color-type__item {
-    width: 262px;
+    width: 263px;
   }
   .color-type__item:nth-child(n + 4) {
     margin-bottom: 0;
   }
   /******** Full name section ********/
   .form__full-name {
-    margin-top: 49px;
+    margin-top: 40px;
     margin-bottom: 50px;
     padding: 0;
   }
@@ -3552,22 +3556,22 @@ img {
   }
   .full-name__input {
     width: 626px;
-    margin-bottom: 39px;
+    margin-bottom: 16px;
   }
-  .full-name__input:nth-of-type(2) {
+  .full-name__input:nth-of-type(n + 2) {
     width: 573px;
+    padding-left: 17px;
   }
   .full-name__input:last-child {
-    width: 573px;
     margin-bottom: 0;
   }
   /******** Tel section ********/
   .form__contact-tel {
-    margin-bottom: 23px;
-    padding-top: 49px;
+    margin-bottom: 16px;
+    padding-top: 42px;
   }
   .contact-tel__title {
-    top: 72px;
+    top: 68px;
   }
   .contact-tel__input-wrap {
     width: 700px;
@@ -3577,7 +3581,7 @@ img {
     padding-right: 40px;
   }
   .contact-tel__icon {
-    top: 12px;
+    top: 19px;
     right: 8px;
   }
   /******** Email section ********/
@@ -3585,7 +3589,7 @@ img {
     padding-bottom: 50px;
   }
   .contact-email__title {
-    top: 23px;
+    top: 27px;
     width: 175px;
     padding-left: 62px;
   }

@@ -717,7 +717,7 @@
 
 @media (min-width: $desktop-screen) {
   .form {
-    padding: 121px 0 50px 0;
+    padding: 104px 0 50px 0;
   }
 
   .form-container {
@@ -759,20 +759,21 @@
 
   .form__color-type {
     padding-top: 65px;
-    padding-bottom: 68px;
+    padding-bottom: 66px;
   }
 
   .color-type__title {
-    top: 65px;
+    top: 67px;
   }
 
   .color-type__list {
+    justify-content: left;
     width: 875px;
 
   }
 
   .color-type__item {
-    width: 262px;
+    width: 263px;
 
     &:nth-child(n + 4) {
       margin-bottom: 0;
@@ -784,7 +785,7 @@
 
 
   .form__full-name {
-    margin-top: 49px;
+    margin-top: 40px;
     margin-bottom: 50px;
     padding: 0;
   }
@@ -804,14 +805,14 @@
 
   .full-name__input {
     width: 626px;
-    margin-bottom: 39px;
+    margin-bottom: 16px;
 
-    &:nth-of-type(2) {
+    &:nth-of-type(n + 2) {
       width: 573px;
+      padding-left: 17px;
     }
 
     &:last-child {
-      width: 573px;
       margin-bottom: 0;
     }
   }
@@ -821,12 +822,12 @@
 
 
   .form__contact-tel {
-    margin-bottom: 23px;
-    padding-top: 49px;
+    margin-bottom: 16px;
+    padding-top: 42px;
   }
 
   .contact-tel__title {
-    top: 72px;
+    top: 68px;
   }
 
   .contact-tel__input-wrap {
@@ -839,7 +840,7 @@
   }
 
   .contact-tel__icon {
-    top: 12px;
+    top: 19px;
     right: 8px;
   }
 
@@ -851,7 +852,7 @@
   }
 
   .contact-email__title {
-    top: 23px;
+    top: 27px;
     width: 175px;
     padding-left: 62px;
   }
