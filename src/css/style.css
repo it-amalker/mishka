@@ -2465,11 +2465,11 @@ img {
 }
 
 .catalog__cards-item {
-  margin-top: 30px;
+  margin-top: 31px;
 }
 
 .catalog__cards-item:first-child {
-  padding-top: 0;
+  margin-top: 0;
 }
 
 .catalog__img-link {
@@ -2483,12 +2483,12 @@ img {
 }
 
 .catalog__card-info-wrap {
-  padding: 28px;
+  padding: 25px 26px 26px 27px;
   border: 1px solid #ececec;
 }
 
 .catalog__title {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .catalog__title-link {
@@ -2507,7 +2507,7 @@ img {
 }
 
 .catalog__description {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
@@ -2667,7 +2667,7 @@ img {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 23px 0 32px 0;
+  padding: 24px 0 32px 0;
   border: 1px solid #ececec;
 }
 
@@ -2685,8 +2685,8 @@ img {
 .video__title::before {
   content: '';
   position: absolute;
-  top: 11px;
-  left: 7px;
+  top: 9px;
+  left: 33px;
   width: 32px;
   height: 23px;
   background-image: url("../img/icons/sprite/sprite.svg#icon-video-camera");
@@ -2703,7 +2703,7 @@ img {
   position: relative;
   display: block;
   height: 150px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .video__img-link::after {
@@ -2740,12 +2740,12 @@ img {
 }
 
 .video__content-wrap {
-  padding: 0 27px;
+  padding: 0 33px;
 }
 
 .video__info {
   max-width: 184px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   font-size: 13px;
   color: #444444;
 }
@@ -2754,6 +2754,7 @@ img {
   width: 192px;
   margin: 0 auto;
   padding: 16px 0;
+  font-size: 17px;
   line-height: 16px;
 }
 

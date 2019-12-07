@@ -7,7 +7,7 @@
 .video__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 23px 0 32px 0;
+  padding: 24px 0 32px 0;
 
   border: 1px solid #ececec;
 }
@@ -25,8 +25,8 @@
     content: '';
 
     position: absolute;
-    top: 11px;
-    left: 7px;
+    top: 9px;
+    left: 33px;
 
     width: 32px;
     height: 23px;
@@ -47,7 +47,7 @@
 
   display: block;
   height: 150px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 
   &::after {
     content: '';
@@ -84,12 +84,12 @@
 }
 
 .video__content-wrap {
-  padding: 0 27px;
+  padding: 0 33px;
 }
 
 .video__info {
   max-width: 184px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   font-size: 13px;
   color: #444444;
@@ -100,6 +100,7 @@
   margin: 0 auto;
   padding: 16px 0;
 
+  font-size: 17px;
   line-height: 16px;
 }
 
