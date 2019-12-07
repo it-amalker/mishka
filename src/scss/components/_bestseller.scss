@@ -95,7 +95,7 @@
 @media (min-width: $tablet-screen) {
   .bestseller {
     min-height: 613px;
-    padding-top: 34px;
+    padding-top: 33px;
 
     &::after {
       height: 17px;
@@ -116,7 +116,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 45px;
   }
 
   .bestseller__title {
@@ -175,6 +175,8 @@
 
   .bestseller__order-button {
     width: 292px;
+
+    font-size: 17px;
   }
 }
 

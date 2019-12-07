@@ -151,6 +151,8 @@
     background-size: 1150px auto;
     }
 
+    background-position: center top;
+
     &::after {
       content: '';
 
@@ -180,7 +182,7 @@
 
     position: relative;
 
-    padding-top: 154px;
+    padding-top: 153px;
 
     &--inner-page {
       padding-top: 97px;
@@ -234,7 +236,7 @@
     }
 
     &--toys::after {
-      top: 31px;
+      top: 33px;
       right: 33px;
     }
 

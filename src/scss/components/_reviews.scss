@@ -62,7 +62,7 @@
 @media (min-width: $tablet-screen) {
   .reviews {
     min-height: 543px;
-    padding-top: 78px;
+    padding-top: 79px;
 
     &::after {
       height: 17px;
@@ -125,7 +125,7 @@
     order: 3;
 
     width: 100%;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
 
     font-size: 17px;
   }
@@ -149,6 +149,7 @@
   .reviews__arrows-position {
     order: 5;
 
+    margin-top: 4px;
     margin-bottom: 0;
     margin-left: auto;
   }
@@ -157,8 +158,10 @@
     order: 2;
 
     width: 175px;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
     margin-left: auto;
+
+    font-size: 17px;
   }
 }
 
