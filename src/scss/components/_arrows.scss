@@ -33,11 +33,11 @@
   }
 
   &--left::after {
-    background-image: url('../../img/icons/sprite/sprite.svg#arrow-left');
+    background-image: url('../img/icons/sprite/sprite.svg#arrow-left');
   }
 
   &--right::after {
-    background-image: url('../../img/icons/sprite/sprite.svg#arrow-right');
+    background-image: url('../img/icons/sprite/sprite.svg#arrow-right');
   }
 
   &:hover::after {

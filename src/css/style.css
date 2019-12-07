@@ -513,7 +513,7 @@ img {
 .nav-toggle--close {
   width: 21px;
   height: 20px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-cross");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-cross");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -885,7 +885,7 @@ img {
   right: 36px;
   width: 40px;
   height: 62px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-lamp");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-lamp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -901,7 +901,7 @@ img {
   right: 21px;
   width: 60px;
   height: 60px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-toy-block");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-toy-block");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -959,7 +959,7 @@ img {
     z-index: 5;
     width: 100%;
     height: 24px;
-    background-image: url("../../img/zig-zag.svg");
+    background-image: url("../img/zig-zag.svg");
     background-repeat: repeat-x;
     background-position: 0 bottom;
     background-size: contain;
@@ -1133,7 +1133,7 @@ img {
   z-index: 5;
   width: 100%;
   height: 6px;
-  background-image: url("../../img/zig-zag-gray.svg");
+  background-image: url("../img/zig-zag-gray.svg");
   background-repeat: repeat-x;
   background-position: 0 bottom;
   background-size: contain;
@@ -1422,14 +1422,14 @@ img {
   left: 8px;
   width: 32px;
   height: 37px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-flower");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-feature-flower");
 }
 
 .features__item--money::before {
   left: 0;
   width: 47px;
   height: 27px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-money");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-feature-money");
 }
 
 .features__item--heart::before {
@@ -1437,7 +1437,7 @@ img {
   left: 7px;
   width: 34px;
   height: 27px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-heart");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-feature-heart");
 }
 
 .features__item--skein::before {
@@ -1445,7 +1445,7 @@ img {
   left: 3px;
   width: 35px;
   height: 34px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-skein");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-feature-skein");
 }
 
 .features__item--rocket::before {
@@ -1453,14 +1453,14 @@ img {
   left: -6px;
   width: 55px;
   height: 23px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-rocket");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-feature-rocket");
 }
 
 .features__item--gift::before {
   left: 3px;
   width: 33px;
   height: 32px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-feature-gift");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-feature-gift");
 }
 
 @media (min-width: 768px) {
@@ -1591,7 +1591,7 @@ img {
   z-index: 5;
   width: 100%;
   height: 6px;
-  background-image: url("../../img/zig-zag-gray.svg");
+  background-image: url("../img/zig-zag-gray.svg");
   background-repeat: repeat-x;
   background-position: 0 bottom;
   background-size: contain;
@@ -1815,11 +1815,11 @@ img {
 }
 
 .arrow--left::after {
-  background-image: url("../../img/icons/sprite/sprite.svg#arrow-left");
+  background-image: url("../img/icons/sprite/sprite.svg#arrow-left");
 }
 
 .arrow--right::after {
-  background-image: url("../../img/icons/sprite/sprite.svg#arrow-right");
+  background-image: url("../img/icons/sprite/sprite.svg#arrow-right");
 }
 
 .arrow:hover::after {
@@ -1934,7 +1934,7 @@ img {
     right: 3px;
     width: 47px;
     height: 80px;
-    background: url("../../img/icons/sprite/sprite.svg#flag");
+    background: url("../img/icons/sprite/sprite.svg#flag");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2631,7 +2631,7 @@ img {
   left: 7px;
   width: 32px;
   height: 23px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-video-camera");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-video-camera");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2657,7 +2657,7 @@ img {
   height: 77px;
   margin-top: -38px;
   margin-left: -50px;
-  background-image: url("../../img/icons/sprite/sprite.svg#icon-play");
+  background-image: url("../img/icons/sprite/sprite.svg#icon-play");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
