@@ -1359,7 +1359,7 @@ img {
     line-height: 57px;
   }
   .bestseller__info-plate {
-    position: relative;
+    position: absolute;
     top: 2px;
     left: 43px;
     width: 77px;
