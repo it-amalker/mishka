@@ -3235,7 +3235,11 @@ img {
     left: 0;
     width: 167px;
   }
+  .form__label {
+    font-size: 19px;
+  }
   .form__input {
+    padding: 19px 0 13px 16px;
     font-size: 19px;
   }
   .form__input:hover {
@@ -3287,15 +3291,15 @@ img {
     background-color: #f1f1f1;
   }
   .form__color-type {
-    padding-bottom: 68px;
-    padding-top: 49px;
+    padding-bottom: 66px;
+    padding-top: 64px;
   }
   .color-type {
     position: relative;
     border: none;
   }
   .color-type__title {
-    top: 49px;
+    top: 68px;
   }
   .color-type__list {
     display: -webkit-box;
@@ -3314,17 +3318,17 @@ img {
   }
   .color-type__item {
     width: 239px;
-    margin-bottom: 57px;
+    margin-bottom: 52px;
   }
   .color-type__item:nth-child(n + 5) {
     margin-bottom: 0;
   }
   .color-type__input + .color-type__label {
-    padding-left: 82px;
+    padding-left: 77px;
   }
   .color-type__input + .color-type__label::before {
-    top: -13px;
-    left: 0;
+    top: -12px;
+    left: -3px;
     width: 54px;
     height: 52px;
   }
@@ -3335,14 +3339,14 @@ img {
     border-color: rgba(68, 68, 68, 0.3);
   }
   .color-type__input:checked + .color-type__label::after {
-    top: 3px;
-    left: 14px;
+    top: 4px;
+    left: 10px;
     width: 30px;
     height: 14px;
   }
   /******** Full name section ********/
   .form__full-name {
-    margin-top: 49px;
+    margin-top: 41px;
     margin-bottom: 50px;
     padding: 0;
   }
@@ -3351,10 +3355,10 @@ img {
     border: none;
   }
   .full-name__title {
-    top: 16px;
+    top: 25px;
   }
   .full-name__label {
-    padding: 16px 0;
+    padding-top: 23px;
   }
   .full-name__wrap {
     display: -webkit-box;
@@ -3375,13 +3379,13 @@ img {
   }
   .full-name__input {
     width: 428px;
-    margin-bottom: 23px;
+    margin-bottom: 16px;
   }
-  .full-name__input:nth-of-type(2) {
+  .full-name__input:nth-of-type(n + 2) {
     width: 375px;
+    padding-left: 19px;
   }
   .full-name__input:last-child {
-    width: 375px;
     margin-bottom: 0;
   }
   /******** Tel section ********/
@@ -3389,15 +3393,15 @@ img {
     background-color: #f1f1f1;
   }
   .form__contact-tel {
-    margin-bottom: 23px;
-    padding-top: 49px;
+    margin-bottom: 16px;
+    padding-top: 42px;
   }
   .contact-tel {
     position: relative;
     border: none;
   }
   .contact-tel__title {
-    top: 65px;
+    top: 68px;
   }
   .contact-tel__input-wrap {
     position: relative;
@@ -3412,7 +3416,7 @@ img {
     padding-right: 55px;
   }
   .contact-tel__icon {
-    top: 12px;
+    top: 18px;
     right: 26px;
   }
   /******** Email section ********/
@@ -3425,7 +3429,7 @@ img {
     border: none;
   }
   .contact-email__title {
-    top: 16px;
+    top: 26px;
     width: 167px;
   }
   .contact-email__input-wrap {
@@ -3441,23 +3445,27 @@ img {
     padding-right: 60px;
   }
   .contact-email__icon {
-    top: 17px;
+    top: 24px;
     right: 22px;
   }
   /******** Message section ********/
   .form__message {
-    margin-top: 53px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 52px;
     padding: 0;
   }
   .message {
     position: relative;
     border: none;
   }
+  .message__title {
+    top: 18px;
+  }
   .form__message__input {
     display: block;
     width: 501px;
     margin-left: auto;
+    padding: 13px 13px 0 14px;
   }
   /******** Button and notice section ********/
   .form__button-wrap {
@@ -3471,9 +3479,11 @@ img {
     width: 230px;
   }
   .form__notice {
+    width: 50%;
     margin-bottom: 0;
     font-size: 17px;
     line-height: 30px;
+    text-align: right;
   }
 }
 

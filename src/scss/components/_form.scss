@@ -371,7 +371,12 @@
     width: 167px;
   }
 
+  .form__label {
+    font-size: 19px;
+  }
+
   .form__input {
+    padding: 19px 0 13px 16px;
     font-size: 19px;
 
     &:hover {
@@ -454,8 +459,8 @@
   }
 
   .form__color-type {
-    padding-bottom: 68px;
-    padding-top: 49px;
+    padding-bottom: 66px;
+    padding-top: 64px;
   }
 
   .color-type {
@@ -465,7 +470,7 @@
   }
 
   .color-type__title {
-    top: 49px;
+    top: 68px;
   }
 
   .color-type__list {
@@ -479,7 +484,7 @@
 
   .color-type__item {
     width: 239px;
-    margin-bottom: 57px;
+    margin-bottom: 52px;
 
     &:nth-child(n + 5) {
       margin-bottom: 0;
@@ -489,11 +494,11 @@
   .color-type__input {
 
     + .color-type__label {
-      padding-left: 82px;
+      padding-left: 77px;
 
       &::before {
-        top: -13px;
-        left: 0;
+        top: -12px;
+        left: -3px;
 
         width: 54px;
         height: 52px;
@@ -514,8 +519,8 @@
     + .color-type__label {
 
       &::after {
-        top: 3px;
-        left: 14px;
+        top: 4px;
+        left: 10px;
 
         width: 30px;
         height: 14px;
@@ -528,7 +533,7 @@
 
 
   .form__full-name {
-    margin-top: 49px;
+    margin-top: 41px;
     margin-bottom: 50px;
     padding: 0;
   }
@@ -540,11 +545,11 @@
   }
 
   .full-name__title {
-    top: 16px;
+    top: 25px;
   }
 
   .full-name__label {
-    padding: 16px 0;
+    padding-top: 23px;
   }
 
   .full-name__wrap {
@@ -564,14 +569,14 @@
 
   .full-name__input {
     width: 428px;
-    margin-bottom: 23px;
+    margin-bottom: 16px;
 
-    &:nth-of-type(2) {
+    &:nth-of-type(n + 2) {
       width: 375px;
+      padding-left: 19px;
     }
 
     &:last-child {
-      width: 375px;
       margin-bottom: 0;
     }
   }
@@ -585,8 +590,8 @@
   }
 
   .form__contact-tel {
-    margin-bottom: 23px;
-    padding-top: 49px;
+    margin-bottom: 16px;
+    padding-top: 42px;
   }
 
   .contact-tel {
@@ -596,7 +601,7 @@
   }
 
   .contact-tel__title {
-    top: 65px;
+    top: 68px;
   }
 
   .contact-tel__input-wrap {
@@ -616,7 +621,7 @@
   }
 
   .contact-tel__icon {
-    top: 12px;
+    top: 18px;
     right: 26px;
   }
 
@@ -635,7 +640,7 @@
   }
 
   .contact-email__title {
-    top: 16px;
+    top: 26px;
 
     width: 167px;
   }
@@ -657,7 +662,7 @@
   }
 
   .contact-email__icon {
-    top: 17px;
+    top: 24px;
     right: 22px;
   }
 
@@ -666,8 +671,8 @@
 
 
   .form__message {
-    margin-top: 53px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 52px;
     padding: 0;
   }
 
@@ -677,10 +682,15 @@
     border: none;
   }
 
+  .message__title {
+    top: 18px;
+  }
+
   .form__message__input {
     display: block;
     width: 501px;
     margin-left: auto;
+    padding: 13px 13px 0 14px;
   }
 
 
@@ -696,10 +706,12 @@
   }
 
   .form__notice {
+    width: 50%;
     margin-bottom: 0;
 
     font-size: 17px;
     line-height: 30px;
+    text-align: right;
   }
 }
 
