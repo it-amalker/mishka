@@ -1130,7 +1130,7 @@ img {
 
 .button {
   display: block;
-  padding: 14px 0 14px;
+  padding: 14px 0 14px 0;
   font-size: 18px;
   line-height: 20px;
   color: #444444;
@@ -2943,7 +2943,7 @@ img {
 
 /********  Radio inputs section *********/
 .form__order-type {
-  margin-top: 24px;
+  margin-top: 23px;
   margin-bottom: 44px;
   padding: 0;
   padding-top: 34px;
@@ -3014,9 +3014,9 @@ img {
 
 /******** Checkbox inputs section ********/
 .form__color-type {
-  margin-bottom: 42px;
+  margin-bottom: 39px;
   padding: 0;
-  padding-top: 36px;
+  padding-top: 33px;
 }
 
 .color-type {
@@ -3025,7 +3025,7 @@ img {
 }
 
 .color-type__item {
-  margin-bottom: 43px;
+  margin-bottom: 37px;
 }
 
 .color-type__item:last-child {
@@ -3038,15 +3038,15 @@ img {
 
 .color-type__input + .color-type__label {
   position: relative;
-  padding-left: 64px;
+  padding-left: 60px;
   cursor: pointer;
 }
 
 .color-type__input + .color-type__label::before {
   content: '';
   position: absolute;
-  top: -6px;
-  left: 0;
+  top: -9px;
+  left: -3px;
   width: 40px;
   height: 39px;
   border: 2px solid #444444;
@@ -3059,8 +3059,8 @@ img {
 .color-type__input:checked + .color-type__label::after {
   content: '';
   position: absolute;
-  top: 6px;
-  left: 9px;
+  top: 4px;
+  left: 6px;
   width: 22px;
   height: 10px;
   border-left: 2px solid #000000;
@@ -3072,7 +3072,7 @@ img {
 
 /******** Full name section ********/
 .form__full-name {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   padding: 0;
   padding-top: 29px;
 }
@@ -3096,9 +3096,9 @@ img {
 
 /******** Tel section ********/
 .form__contact-tel {
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding: 0;
-  padding-top: 7px;
+  padding-top: 6px;
 }
 
 .contact-tel {
@@ -3160,7 +3160,7 @@ img {
 
 /******** Message section ********/
 .form__message {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   padding: 0;
   padding-top: 25px;
 }
@@ -3200,15 +3200,20 @@ img {
 
 .form__button {
   width: 260px;
+  padding: 16px 0 16px 0;
+  font-size: 17px;
+  line-height: 16px;
   background-color: transparent;
   cursor: pointer;
 }
 
 .form__notice {
+  width: 100%;
   margin-bottom: 31px;
   font-size: 14px;
   line-height: 16px;
   color: #444444;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
